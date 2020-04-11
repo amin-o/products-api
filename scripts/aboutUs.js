@@ -70,3 +70,4 @@ function changeBiography(developerName){
 
 }
 
+import { setSliderModalValues } from "scripts/modal.js"
