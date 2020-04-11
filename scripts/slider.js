@@ -23,7 +23,7 @@ autoSlider = setInterval(sliderLoadAuto, 3000); //start autoSlider again when le
 let autoSlider = setInterval(sliderLoadAuto, 3000);
 
 function sliderLoadAuto(){
-    sliderLoadNext();
+   // sliderLoadNext();
 }
 
 function handleErrors(response) {

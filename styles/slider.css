@@ -29,16 +29,16 @@
 
 .sliderProductTitle{
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 
-	1px 1px 1px rgba(0,0,0,.5), 
-	4px 7px 15px rgba(13,74,255,0.9);
-	font-size: 2rem;
-	color: white;
-	text-align: center;
-	font-weight: 700;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 4px 7px 15px rgba(1, 27, 102, 0.9);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    background: #12121212;
+    border-radius: 5%;
 }
 .sliderReadMoreBtn{
 	position: absolute;
