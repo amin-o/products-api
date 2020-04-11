@@ -14,7 +14,7 @@
 
 	background: url(/resources/aboutUsBackground.jpg)  no-repeat ;
 	background-size: cover;
-	
+	  
 	text-align: center;
 	
 	 
@@ -142,3 +142,103 @@ div[class^="about-us-card"]:hover{
 	box-shadow: 0px 0px 109px -42px rgba(255,132,0,1) !important;
  
 }
+
+/* animations */
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slideInDown {
+	from {
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	  visibility: visible;
+	}
+  
+	to {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  @keyframes slideInDown {
+	from {
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	  visibility: visible;
+	}
+  
+	to {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  }
+  
+  .slideInDown {
+	-webkit-animation-name: slideInDown;
+	animation-name: slideInDown;
+	animation-duration: 2s;
+  }
