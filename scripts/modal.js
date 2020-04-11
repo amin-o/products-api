@@ -1,7 +1,3 @@
-
-//attach listener to the button for modal testing
-document.getElementById('activateModal').addEventListener('click', toggleModalWindow);
-
 //on button click toggle modal window
 document.getElementById('modalCloseButton').addEventListener('click', toggleModalWindow);
 
