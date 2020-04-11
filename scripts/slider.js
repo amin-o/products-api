@@ -17,13 +17,13 @@ slider.addEventListener('mouseenter', function(){
 })
 slider.addEventListener('mouseleave', function(){
 mouseOverSlider = false;
-autoSlider = setInterval(sliderLoadAuto, 3000); //start autoSlider again when leave slider area
+autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
 })
 
-let autoSlider = setInterval(sliderLoadAuto, 3000);
+let autoSlider = setInterval(sliderLoadAuto, 4300);
 
 function sliderLoadAuto(){
-    sliderLoadNext();
+   sliderLoadNext();
 }
 
 function handleErrors(response) {
@@ -33,7 +33,7 @@ function handleErrors(response) {
     return response;
 }
 
-fetch(`https://api.bestbuy.com/v1/products(releaseDate<=today&longDescription!=null)?apiKey=${apiKey}&format=json&show=sku,name,longDescription,image,regularPrice,salePrice,releaseDate,type&sort=releaseDate.dsc`)
+fetch(`https://api.bestbuy.com/v1/products(releaseDate<=today&longDescription!=null)?apiKey=${apiKey}&format=json&show=sku,name,longDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage&sort=releaseDate.dsc`)
     .then(handleErrors)
     .then(response => response.json())
     .then(response => response.products)
@@ -57,11 +57,12 @@ function sliderShowElements(arrIndexes){
         let salePrice = sliderItems[i].salePrice;salePrice;
         let releaseDate = sliderItems[i].releaseDate;
         let type = sliderItems[i].type;
-        appendNewSliderItem(name,longDescription,image, regularPrice, salePrice, releaseDate,type);
+        let customerReviewAverage = sliderItems[i].customerReviewAverage;
+        appendNewSliderItem(name,longDescription,image, regularPrice, salePrice, releaseDate,type, customerReviewAverage);
     })
 }
 
-function appendNewSliderItem(name,longDescription,image, regularPrice, salePrice, releaseDate,type){
+function appendNewSliderItem(name,longDescription,image, regularPrice, salePrice, releaseDate,type, customerReviewAverage){
     
     let div = document.createElement('div');
     div.classList.add('sliderItem');
@@ -79,7 +80,7 @@ function appendNewSliderItem(name,longDescription,image, regularPrice, salePrice
     btn.classList.add('sliderReadMoreBtn');
     btn.addEventListener('click', openModal)
     function openModal(){
-        //this function will not be here, this is just for testine
+        setSliderModalValues(image, name, longDescription, customerReviewAverage, type, regularPrice, salePrice, releaseDate)
     }
     div.appendChild(img);
     div.appendChild(p);
