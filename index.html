@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products API Main Page</title>
@@ -12,10 +13,20 @@
 	<link rel="stylesheet" href="styles/footer.css">
     <!-- additional css between -->
     
+    <link rel="stylesheet" href="styles/modal.css">
+
+    <!-- additional css above -->
+
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- scripts -->
+    <script src="scripts/modal.js" defer></script>
+    
 	<link rel="stylesheet" href="styles/slider.css">
     <!-- additional css above -->
 	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
     <script src="scripts/slider.js" defer></script>
+
 </head>
 
     <body>
@@ -48,6 +59,45 @@
 
         </div>
         
+        <!--<button id="activateModal">activate modal slider</button>-->
+        <!-- modal window -->
+        <div id="modalWindow" class="modal">
+
+            <!-- modal content-->
+            <div class="modal-content fadeIn">
+
+                <!-- close button--> 
+                <button id="modalCloseButton" class="modal-close-button">X</button>
+                
+                <!-- modal window for slider-->
+                <div id="sliderModal" class="slider-modal">
+
+                
+                    <img class="modal-slider-product-image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3472/34724029_sa.jpg" alt="">
+                    
+                    <div class="modal-slider-info-section">
+
+                        <div class="modal-slider-product-name"></div>
+                        <div class="modal-slider-product-release-date"></div>
+                        <div class="modal-slider-product-description"></div>             
+                        <div class="modal-slider-product-rating"></div>
+                        <div class="modal-slider-product-price-regular"></div>
+                        <div class="modal-slider-product-price-sale"></div>
+                        <div class="modal-slider-product-category"></div>
+ 
+                        <button class="add-to-cart-modal">Add to cart</button>
+
+                    </div>
+
+                </div>
+                        
+
+            </div>
+                   
+        </div>
+            
+          
+
         <!-- FOOTER -->
         <footer>
 
