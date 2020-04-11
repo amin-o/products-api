@@ -69,5 +69,3 @@ function changeBiography(developerName){
     document.getElementById('aboutUsBiography').textContent = setBio;
 
 }
-
-import { setSliderModalValues } from "scripts/modal.js"
