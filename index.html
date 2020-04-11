@@ -8,22 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products API Main Page</title>
 
+    <!-- css -->
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
-	<link rel="stylesheet" href="styles/footer.css">
-    <!-- additional css between -->
-    
     <link rel="stylesheet" href="styles/modal.css">
-
-    <!-- additional css above -->
-
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <!-- scripts -->
     <script src="scripts/modal.js" defer></script>
-    
-	<link rel="stylesheet" href="styles/slider.css">
-    <!-- additional css above -->
 	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
     <script src="scripts/slider.js" defer></script>
 
@@ -31,77 +25,79 @@
 
     <body>
 
-        <!-- HEADER -->
-        <header>
+        <div id="indexWrapper">
 
-        </header>
+            <!-- HEADER -->
+            <header>
+
+            </header>
         
-        <!-- slider sectin-->
-        <div id="slider">
+            <!-- slider sectin-->
+            <div id="slider">
 			
-        	<i class="fas fa-chevron-left sliderNavigationBtn sliderPreviousBtn"></i>
+        	    <i class="fas fa-chevron-left sliderNavigationBtn sliderPreviousBtn"></i>
 
-			<i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
-        </div>        
+                <i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
+            
+            </div>        
 
-        <!-- facebook sidebar -->
-        <div id="facebookSidebar">
-
-        </div>
-
-        <!-- best sidebar -->
-        <div id="bestSidebar">
-
-        </div>
-
-        <!-- top rated -->
-        <div id="topRated">
-
-        </div>
-        
-        <!--<button id="activateModal">activate modal slider</button>-->
-        <!-- modal window -->
-        <div id="modalWindow" class="modal">
-
-            <!-- modal content-->
-            <div class="modal-content fadeIn">
-
-                <!-- close button--> 
-                <button id="modalCloseButton" class="modal-close-button">X</button>
-                
-                <!-- modal window for slider-->
-                <div id="sliderModal" class="slider-modal">
-
-                
-                    <img class="modal-slider-product-image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3472/34724029_sa.jpg" alt="">
-                    
-                    <div class="modal-slider-info-section">
-
-                        <div class="modal-slider-product-name"></div>
-                        <div class="modal-slider-product-release-date"></div>
-                        <div class="modal-slider-product-description"></div>             
-                        <div class="modal-slider-product-rating"></div>
-                        <div class="modal-slider-product-price-regular"></div>
-                        <div class="modal-slider-product-price-sale"></div>
-                        <div class="modal-slider-product-category"></div>
- 
-                        <button class="add-to-cart-modal">Add to cart</button>
-
-                    </div>
-
-                </div>
-                        
+            <!-- facebook sidebar -->
+            <div id="facebookSidebar">
 
             </div>
+
+            <!-- best sidebar -->
+            <div id="bestSidebar">
+
+            </div>
+
+            <!-- top rated -->
+            <div id="topRated">
+
+            </div>
+        
+            <!--<button id="activateModal">activate modal slider</button>-->
+            <!-- modal window -->
+            <div id="modalWindow" class="modal">
+
+                <!-- modal content-->
+                <div class="modal-content fadeIn">
+
+                    <!-- close button--> 
+                    <button id="modalCloseButton" class="modal-close-button">X</button>
+                
+                    <!-- modal window for slider-->
+                    <div id="sliderModal" class="slider-modal">
+
+                
+                        <img class="modal-slider-product-image" src="" alt="missing image">
+                    
+                        <div class="modal-slider-info-section">
+
+                            <div class="modal-slider-product-name"></div>
+                            <div class="modal-slider-product-release-date"></div>
+                            <div class="modal-slider-product-description"></div>             
+                            <div class="modal-slider-product-rating"></div>
+                            <div class="modal-slider-product-price-regular"></div>
+                            <div class="modal-slider-product-price-sale"></div>
+                            <div class="modal-slider-product-category"></div>
+ 
+                            <button class="add-to-cart-modal">Add to cart</button>
+
+                        </div>
+
+                    </div>
+                        
+
+                </div>
                    
-        </div>
+            </div>
             
-          
+            <!-- FOOTER -->
+            <footer>
 
-        <!-- FOOTER -->
-        <footer>
-
-        </footer>
+            </footer>
+        </div>
 
     </body>
 
