@@ -1,0 +1,92 @@
+#slider{
+	position: relative;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20rem;
+    padding: 0.5rem 0.5rem;
+    background: transparent;
+}
+.sliderItem{
+	position: relative;
+    border: 2px solid #001a4d98;
+    border-radius: 1rem;
+}
+.sliderItem img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    animation-name: sliderAnimation;
+  	animation-duration: 1.7s;
+    opacity: 0.75
+}
+.sliderItem img:hover{
+    opacity: 0.95;
+}
+
+@keyframes sliderAnimation{
+  0%   {
+  	opacity: 0;
+  }
+  100% {opacity: 0.75;}
+}
+
+.sliderProductTitle{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 4px 7px 15px rgba(1, 27, 102, 0.9);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    background: #12121212;
+    border-radius: 5%;
+}
+.sliderReadMoreBtn{
+	position: absolute;
+	left: 50%;
+	bottom: 0.5rem;
+	transform: translate(-50%, 0rem);
+ 
+	border: 0;
+   -webkit-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+-moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+	background-color: #003392f1;
+	border-radius: 0.6rem;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+}
+.sliderReadMoreBtn:hover{
+    background-color: #001a49e8;
+    transition-duration: 0.5s;
+}
+
+.sliderNavigationBtn{
+	background: #00298183;
+    font-size: 3rem;
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.sliderNavigationBtn:hover{
+    cursor: pointer;
+    background: #002981de;
+    transition-duration: 0.5s;
+}
+
+.sliderPreviousBtn{
+	left: 0.5rem;
+}
+.sliderNextBtn{
+	right: 0.5rem;
+}

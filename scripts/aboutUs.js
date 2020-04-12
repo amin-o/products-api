@@ -69,4 +69,3 @@ function changeBiography(developerName){
     document.getElementById('aboutUsBiography').textContent = setBio;
 
 }
-

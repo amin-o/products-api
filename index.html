@@ -3,22 +3,26 @@
 <html lang="en">
 
 <head>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products API Main Page</title>
 
+    <!-- css -->
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/indexLayout.css">
     <link rel="stylesheet" href="styles/header.css">
-
-    <!-- additional css between -->
-    
-
-    <!-- additional css above -->
-
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/bestSiderbar.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/footer.css">
 
+    <!-- scripts -->
+    <script src="scripts/modal.js" defer></script>
+	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src='scripts/bestSidebar.js' defer></script>
+     
 </head>
 
     <body>
@@ -47,31 +51,108 @@
         <label for="nav-toggle" class="nav-toggle-label">
             <div class="menu-toggle">&#9776;</div>
         </label>
+    
         </header>
+
+        <div id="indexWrapper">
+
+            <!-- slider sectin-->
+            <div id="slider">
+			
+        	    <i class="fas fa-chevron-left sliderNavigationBtn sliderPreviousBtn"></i>
+
+                <i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
+            
+            </div>   
+
+            <!-- best sidebar -->
+            <div id="bestSidebar" class="best-sidebar-main">
+                 
+                <div class="best-sidebar-item-1">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails">Details</button>
+                
+                </div>
+
+                <div class="best-sidebar-item-2">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails">Details</button>
+                
+                </div>
+
+                <div class="best-sidebar-item-3">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails">Details</button>
+                
+                </div>
+
+            </div>
+
+            <!-- facebook sidebar -->
+            <div id="facebookSidebar">
+
+                facebook
+                <p>sds</p>
+                <p>sds</p>
+                <p>sds</p>
+                <p>sds</p>
+            </div>
+
+            <!-- top rated -->
+            <div id="topRated">
+                TOP RATED SECTION
+            </div>
         
-        <!-- slider sectin-->
-        <div id="slider">
+            <!-- modal window -->
+            <div id="modalWindow" class="modal">
 
-        </div>        
+                <!-- modal content-->
+                <div class="modal-content fadeIn">
 
-        <!-- facebook sidebar -->
-        <div id="facebookSidebar">
+                    <!-- close button--> 
+                    <button id="modalCloseButton" class="modal-close-button">x</button>
+                
+                    <!-- modal window for slider-->
+                    <div id="sliderModal" class="slider-modal">
 
-        </div>
+                
+                        <img class="modal-slider-product-image" src="" alt="missing image">
+                    
+                        <div class="modal-slider-info-section">
 
-        <!-- best sidebar -->
-        <div id="bestSidebar">
+                            <div class="modal-slider-product-name"></div>
+                            <div class="modal-slider-product-release-date"></div>
+                            <div class="modal-slider-product-description"></div>             
+                            <div class="modal-slider-product-rating"></div>
+                            <div class="modal-slider-product-price-regular"></div>
+                            <div class="modal-slider-product-price-sale"></div>
+                            <div class="modal-slider-product-category"></div>
+ 
+                            <button class="add-to-cart-modal">Add to cart</button>
 
-        </div>
+                        </div>
 
-        <!-- top rated -->
-        <div id="topRated">
+                    </div>
+                        
 
-        </div>
+                </div>
+                   
+            </div>
         
+        </div>
+
         <!-- FOOTER -->
         <footer>
-
+            FOOTER
         </footer>
 
     </body>
