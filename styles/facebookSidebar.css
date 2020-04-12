@@ -1,3 +1,10 @@
-/* #facebookSidebar{
-    background: white;
-} */
+@media only screen and (max-width: 900px) {
+
+    #facebookSidebar{
+        display: none;
+    }
+
+    #fb{
+        display: none;
+    }
+}
