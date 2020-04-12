@@ -11,98 +11,76 @@
 @media (min-width: 900px) { 
 
     .best-sidebar-main{
-    
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
-        padding: 0rem 2rem 1rem 2rem;
-        min-width: 9rem;
 
         -webkit-box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
         -moz-box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
         box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
 
         align-content: center;
-        
     }
 
     .best-sidebar-main img{
-
         margin-bottom: 0.5rem;
-        width: 40%;
+        width: 50%;
         -webkit-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
         -moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
         box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
         border-radius: 0.5rem;
-
     }
 
     .best-sidebar-main div{
-
         color:rgb(0, 0, 80);
         text-align: center;
-        margin-bottom: 0.25rem;
-        
     }
 
     div[class^="best-sidebar-item"]{
-        
         border-bottom: rgb(0, 36, 155) solid 0.25rem;
         border-radius: 0.5rem;
-
     }
 
     .best-sidebar-title{
-
         font-size: 1rem;
         font-weight: 600;
         padding:1rem;
-        
     }
 
     .best-sidebar-price{
-
         color: white !important;
         background-color: rgb(0, 167, 0);
         border-radius: 0.5rem;
-        padding:0.75rem;
-        margin: 0.5rem 3rem 1rem 3rem;
+        padding:0.5rem;
         font-weight: 600;
         -webkit-box-shadow: 0px 0px 29px -7px rgba(0,186,81,1);
         -moz-box-shadow: 0px 0px 29px -7px rgba(0,186,81,1);
         box-shadow: 0px 0px 29px -7px rgba(0,186,81,1);
-        
+        width: fit-content;
         text-align: center;
         font-size:  1rem;
-        
+        margin:auto;
     }
 
     
     .best-sidebar-buy-button{
-
         color: white !important;
         background-color: rgb(9, 108, 255);
         border-radius: 0.5rem;
-        padding:0.75rem;
-        
+        padding:0.5rem 2rem;
         margin: 1rem;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1rem;
         border: none;
-        min-width: 10rem;
         font-weight: 600;
         -webkit-box-shadow: inset 0px 0px 29px -15px rgba(102,102,102,1);
         -moz-box-shadow: inset 0px 0px 29px -15px rgba(102,102,102,1);
         box-shadow: inset 0px 0px 29px -15px rgba(102,102,102,1);
-
     }
 
     .best-sidebar-buy-button:hover{
-
         cursor: pointer;
         transition-duration: 0.5s;
         background-color: rgb(0, 59, 148);
-        
-
     }
 
 }

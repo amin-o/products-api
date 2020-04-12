@@ -5,24 +5,22 @@
     grid-template-columns: repeat(3, 1fr);
     height: 20rem;
     padding: 0.5rem 0.5rem;
-    background: transparent;
+    grid-row: 2/5;
+    grid-column: 1/10;
 }
 .sliderItem{
 	position: relative;
     border: 2px solid #001a4d98;
     border-radius: 1rem;
 }
-.sliderItem img{
-	width: 100%;
+.sliderImg{
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     animation-name: sliderAnimation;
-  	animation-duration: 1.7s;
+    animation-duration: 1.7s;
     opacity: 0.75
-}
-.sliderItem img:hover{
-    opacity: 0.95;
 }
 
 @keyframes sliderAnimation{
@@ -38,23 +36,27 @@
     top: 50%;
     transform: translate(-50%,-50%);
     text-shadow: 4px 7px 15px rgba(1, 27, 102, 0.9);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
-    background: #12121212;
+    background: #0000005e;;
     border-radius: 5%;
+    width: 70%;
+}
+
+.sliderItem:hover .sliderImg{
+    opacity: 0.95;
 }
 .sliderReadMoreBtn{
 	position: absolute;
 	left: 50%;
 	bottom: 0.5rem;
 	transform: translate(-50%, 0rem);
- 
 	border: 0;
    -webkit-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
--moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
-	background-color: #003392f1;
+    -moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+    box-shadow: 0px 0px 30px 5px rgb(249, 248, 255);
+	background-color: #32579ff1;
 	border-radius: 0.6rem;
 	cursor: pointer;
 	color: #ffffff;

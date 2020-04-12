@@ -22,6 +22,8 @@ autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when le
 
 let autoSlider = setInterval(sliderLoadAuto, 4300);
 
+
+
 function sliderLoadAuto(){
    sliderLoadNext();
 }
@@ -68,6 +70,7 @@ function appendNewSliderItem(name,longDescription,image, regularPrice, salePrice
     div.classList.add('sliderItem');
 
     let img = document.createElement('img');
+    img.classList.add('sliderImg');
     img.src=image;
     img.alt = name;
 
