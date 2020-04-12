@@ -79,6 +79,85 @@
 	font-weight: 700;
 }
 
+
+.contactFormSection{
+
+}
+
+.baner{
+	background-color: var(--blue);
+	text-align: center;
+}
+.baner h1{
+	color: #f36600e0;
+    font-size: 3rem;
+}
+
+.formContainer{
+	margin-bottom: 1rem;
+}
+
+.formContainer h3{
+    text-align: center;
+    margin: 3rem 4rem;
+}
+
+.gridContainer{
+	display:grid;
+	grid-template-columns: 2fr 3fr 2fr;
+}
+
+form{
+    grid-column-start: 2;
+    padding: 2rem;
+    background: #116db6ab;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+form input[type=text], form input[type=email], form select, form input[type=number]{
+	color: #495057;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin-top: 0.3rem;
+    margin-bottom: 1.4rem;
+    padding: 0.8rem 0.6rem;
+}
+
+form p{
+	margin:0;
+}
+
+textarea{
+	min-height: 5rem;
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+}
+form p.comments{
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+input[type=submit]{
+    background-color: #f36600cf;
+    border: 0;
+    border-radius: 10rem;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 3rem;
+}
+
+input[type=submit]:hover{
+	background-color: #f36600e6;
+    transform: scale(1.1);
+}
+
 @media (max-width: 1024px){
 	.contentArea-text {
     	grid-column: 1/8;
