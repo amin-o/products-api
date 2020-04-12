@@ -18,8 +18,8 @@
     margin-bottom: 1rem;
     width: 40%;
     -webkit-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
--moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+    -moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+    box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
 }
 
 .best-sidebar-main div{
@@ -133,7 +133,7 @@ div[class^="best-sidebar-item"]{
 
 .pulse {
 
-  -webkit-animation-name: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
  
 }
