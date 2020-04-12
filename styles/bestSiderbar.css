@@ -3,7 +3,7 @@
     .best-sidebar-main{
     
         display: none;
-        
+
     }
 
 }
@@ -27,11 +27,14 @@
     }
 
     .best-sidebar-main img{
+
         margin-bottom: 1rem;
-        width: 40%;
+        width: 50%;
         -webkit-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
         -moz-box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
         box-shadow: 0px 0px 29px -5px rgba(15,0,128,1);
+        border-radius: 0.5rem;
+
     }
 
     .best-sidebar-main div{
@@ -40,7 +43,6 @@
         text-align: center;
         margin-bottom: 0.5rem;
         
-
     }
 
     div[class^="best-sidebar-item"]{
@@ -49,8 +51,6 @@
         border-radius: 0.5rem;
 
     }
-
-
 
     .best-sidebar-title{
         font-size: 1.1rem;
@@ -75,9 +75,11 @@
         font-size:  1.3rem;
         
     }
+
     .best-sidebar-price{
         
         font-size: 1.8rem;
+
     }
 
     .best-sidebar-buy-button{

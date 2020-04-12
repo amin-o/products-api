@@ -54,5 +54,4 @@ function populateBestSidebar(bestBarSection, productName, image, salePrice, regu
 
     });
 
-
 }
