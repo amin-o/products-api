@@ -1,0 +1,153 @@
+:root{
+	 --orangeColor: #f366008c;
+	 --blue: #116DB6;
+}
+.contentArea{
+	height: 60vh;
+	background-color: var(--orangeColor);
+	display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 1rem;
+}
+.contentArea-text{
+	display: inline-block;
+	font-weight: bold;
+	color: var(--blue);
+    grid-column: 2/8;
+    text-align: center;
+}
+.imgContentArea{
+	grid-column: 9/13;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20%;
+}
+
+.headingPart2{
+	font-size: 6rem;
+	margin:0;
+}
+.headingPart1{
+	font-size:3.6rem;
+	margin:0;
+}
+
+.chatBotSection{
+	margin: 5rem;
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-gap: 2rem;
+}
+.imgChatBot{
+	display: block;
+    max-width: 100%;
+    grid-column: 1/6;
+    max-height: 100%;
+    height: 100%;
+}
+.textChatBotSection{
+	grid-column: 6/13;
+}
+.imgChatBotHidden{
+	display: none;
+}
+.btnChatBot{
+	box-shadow: 0px 7px 15px -6px #eb650c;
+	background-color: var(--blue);
+	border:0;
+	border-radius:10rem;
+	display:inline-block;
+	color: white;
+	cursor:pointer;
+	font-size:1rem;
+	font-weight:bold;
+	padding:0.8rem 1.2rem;
+}
+.btnChatBot:hover {
+	background-color:#f59047;
+}
+
+.textChatBotSection h3{
+	margin: 0;
+    font-size: 2.3rem;
+    color: var(--blue);
+}
+.textChatBotSection span{
+	color: var(--blue);
+	font-weight: 700;
+}
+
+@media (max-width: 1024px){
+	.contentArea-text {
+    	grid-column: 1/8;
+	}
+	.imgContentArea{
+		grid-column: 8/13;
+	}
+	.headingPart2{
+		font-size:6vw;
+	}
+	.headingPart1{
+		font-size:5.5vw;
+	}
+	.chatBotSection {
+    	margin: 5rem 3rem
+	}
+	.imgChatBot {
+	    grid-column: 1/7;
+	    object-fit: cover;
+	}
+	.textChatBotSection {
+    	grid-column: 7/13;
+	}
+	
+}
+
+@media (max-width: 768px){
+	.contentArea{
+		height: 50vh;
+	}
+	.imgChatBot{
+		display: none;
+	}
+	.imgChatBotHidden {
+	    display: block;
+	    width: 60%;
+	    margin: auto;
+	    margin-top: 1rem;
+	}
+	.textChatBotSection {
+	    grid-column: 1/13;
+	    text-align: center;
+	}
+	.chatBotSection {
+	    margin: 5rem 3rem;
+	    margin: 1.5rem 3rem;
+	    grid-gap:0;
+	}
+}
+
+@media (max-width: 640px){
+	body,html{
+		font-size: 16px;
+	}
+	.contentArea {
+    	height: 45vh;
+	}
+}
+@media (max-width: 425px){
+	body,html{
+		font-size: 14px;
+	}
+	.contentArea {
+    	height: 35vh;
+	}
+}
+@media (max-width: 375px){
+	
+}
+@media (max-width: 320px){
+	
+}
