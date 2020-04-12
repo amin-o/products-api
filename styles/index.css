@@ -33,7 +33,9 @@ header{
 #facebookSidebar{
     grid-row: 6/11;
     grid-column: 10/12;
-  
+    
+    width: 100%;
+    background-color: orange;
    
 }
 

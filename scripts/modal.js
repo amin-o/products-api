@@ -40,8 +40,6 @@ function setSliderModalValues(image, name, description, rating, categories, regu
     }
 
     document.getElementsByClassName('modal-slider-product-name')[0].textContent =`Name: ${name}`;
-     
-   
     document.getElementsByClassName('modal-slider-product-category')[0].textContent =`Categories: ${categories}`;
     document.getElementsByClassName('modal-slider-product-price-regular')[0].textContent =`Price: ${regularPrice}$`;
     document.getElementsByClassName('modal-slider-product-price-sale')[0].textContent =`Sale Price: ${salePrice}$`;
