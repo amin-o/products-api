@@ -10,8 +10,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/bestSiderbar.css">
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -20,17 +21,20 @@
     <script src="scripts/modal.js" defer></script>
 	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
     <script src="scripts/slider.js" defer></script>
+    <script src='scripts/bestSidebar.js' defer></script>
 
 </head>
 
     <body>
 
+        <!-- HEADER -->
+            <header>
+                HEADER
+            </header>
+
         <div id="indexWrapper">
 
-            <!-- HEADER -->
-            <header>
-
-            </header>
+            
         
             <!-- slider sectin-->
             <div id="slider">
@@ -39,21 +43,46 @@
 
                 <i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
             
-            </div>        
-
-            <!-- facebook sidebar -->
-            <div id="facebookSidebar">
-
-            </div>
+            </div>   
 
             <!-- best sidebar -->
-            <div id="bestSidebar">
+            <div id="bestSidebar" class="best-sidebar-main">
+                 
+                <div class="best-sidebar-item-1">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails">  Details </button>
+                </div>
+
+                <div class="best-sidebar-item-2">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails">  Details </button>
+                </div>
+
+                <div class="best-sidebar-item-3">
+
+                    <div class="best-sidebar-title"></div>
+                    <img src="" alt="" class="best-sidebar-image">
+                    <div class="best-sidebar-price pulse "></div>
+                    <button class="best-sidebar-buy-button" id="bestSiderbarDetails"> Details </button>
+                </div>
 
             </div>
+            <!-- facebook sidebar -->
+            <div id="facebookSidebar">
+                FACEBOOK SIDEBAR
+            </div>
+
+            
 
             <!-- top rated -->
             <div id="topRated">
-
+                TOP RATED SECTION
             </div>
         
             <!--<button id="activateModal">activate modal slider</button>-->
@@ -93,12 +122,12 @@
                    
             </div>
             
-            <!-- FOOTER -->
-            <footer>
-
-            </footer>
+            
         </div>
-
+        <!-- FOOTER -->
+            <footer>
+                    FOOTER
+            </footer>
     </body>
 
 </html>

@@ -1,0 +1,55 @@
+#indexWrapper{
+
+    display: grid;
+    grid-template-columns: repeat(12. 1fr);
+    gap: 1rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+header{
+
+    grid-row: 1;
+    grid-column: 1/13;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(70, 50, 255);
+    margin-bottom: 3rem;
+
+}
+
+#slider{
+    grid-row: 2/5;
+    grid-column: 2/9;
+}
+
+#bestSidebar{
+    grid-row: 2/6;
+    grid-column: 10/12;
+    
+}
+
+#facebookSidebar{
+    grid-row: 6/11;
+    grid-column: 10/12;
+    width: 100%;
+    background-color: orange;
+    height: 25rem;
+}
+
+#topRated{
+    grid-row: 5/11;
+    grid-column: 2/9;
+    width: 100%;
+    background-color: palegreen;
+}
+
+footer{
+    margin-top: 3rem;
+    width: 100%;
+    height: 15rem;
+    grid-column: 1/13;
+    background-color: rgb(9, 0, 134);
+
+}

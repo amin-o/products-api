@@ -14,6 +14,17 @@ function setSliderModalValues(image, name, description, rating, categories, regu
     document.getElementById('modalWindow').classList.toggle('modal-window-show');
 
     document.getElementsByClassName('modal-slider-product-image')[0].src=image;
+
+    if(description == 'null'){
+
+        document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: This product has not description.`;
+
+    } else {
+
+        document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: ${description}`;
+
+    }
+
     document.getElementsByClassName('modal-slider-product-name')[0].textContent =`Name: ${name}`;
     document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: ${description}`;
     document.getElementsByClassName('modal-slider-product-rating')[0].textContent =`Rating: ${rating}`;
