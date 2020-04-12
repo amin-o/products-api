@@ -104,24 +104,27 @@
 
 .gridContainer{
 	display:grid;
-	grid-template-columns: 2fr 3fr 2fr;
+	grid-template-columns: 2fr 6fr 2fr;
 }
 
 form{
     grid-column-start: 2;
     padding: 2rem;
     background: #116db6ab;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
     border-radius: 2rem;
     text-align: center;
+    width: 100%;
+    max-width: 40rem;
+    justify-self: center;
 }
 
 form input[type=text], form input[type=email], form select, form input[type=number]{
 	color: #495057;
     border: 0;
     border-radius: 0.25rem;
-    width: 100%;
+    width: 90%;
     margin-top: 0.3rem;
     margin-bottom: 1.4rem;
     padding: 0.8rem 0.6rem;
@@ -133,7 +136,7 @@ form p{
 
 textarea{
 	min-height: 5rem;
-    width: 100%;
+    width: 90%;
     padding: 0.625rem;
     margin-bottom: 1rem;
 }
@@ -206,6 +209,17 @@ input[type=submit]:hover{
 	    margin: 1.5rem 3rem;
 	    grid-gap:0;
 	}
+	.gridContainer{
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+	.formContainer h3 {
+    	margin: 3rem 3rem;
+	}
+	.baner h1 {
+	    font-size: 2rem;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
+	}
 }
 
 @media (max-width: 640px){
@@ -215,6 +229,9 @@ input[type=submit]:hover{
 	.contentArea {
     	height: 45vh;
 	}
+	.formContainer h3 {
+    	margin: 2rem;
+	}
 }
 @media (max-width: 425px){
 	body,html{
@@ -222,6 +239,12 @@ input[type=submit]:hover{
 	}
 	.contentArea {
     	height: 35vh;
+	}
+	.gridContainer{
+		grid-template-columns: 1fr 4fr 1fr;
+	}
+	.baner h1 {
+   	 	font-size: 1.5rem;
 	}
 }
 @media (max-width: 375px){
