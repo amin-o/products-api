@@ -15,9 +15,11 @@ function setSliderModalValues(image, name, description, rating, categories, regu
 
     document.getElementsByClassName('modal-slider-product-image')[0].src=image;
 
-    if(description == 'null'){
+    //check if product has a description
+    if(description === null){
 
-        document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: This product has not description.`;
+        document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: This product does not have a description.`;
+        document.getElementsByClassName('modal-slider-product-description')[0].style.color = "crimson";
 
     } else {
 
@@ -25,9 +27,21 @@ function setSliderModalValues(image, name, description, rating, categories, regu
 
     }
 
+    //check if product has a rating
+    if(rating === null){
+
+        document.getElementsByClassName('modal-slider-product-rating')[0].textContent  =`Rating: This product has not been rated yet.`;
+        document.getElementsByClassName('modal-slider-product-rating')[0].style.color = "crimson";
+
+    } else {
+
+        document.getElementsByClassName('modal-slider-product-rating')[0].textContent =`Rating: ${rating}`;
+        
+    }
+
     document.getElementsByClassName('modal-slider-product-name')[0].textContent =`Name: ${name}`;
-    document.getElementsByClassName('modal-slider-product-description')[0].textContent =`Description: ${description}`;
-    document.getElementsByClassName('modal-slider-product-rating')[0].textContent =`Rating: ${rating}`;
+     
+   
     document.getElementsByClassName('modal-slider-product-category')[0].textContent =`Categories: ${categories}`;
     document.getElementsByClassName('modal-slider-product-price-regular')[0].textContent =`Price: ${regularPrice}$`;
     document.getElementsByClassName('modal-slider-product-price-sale')[0].textContent =`Sale Price: ${salePrice}$`;
