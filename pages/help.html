@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Help Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/global.css">
+	<link rel="stylesheet" href="../styles/help.css">
+	<script src="../scripts/help.js" defer></script>
+</head>
+<body>
+	
+	<header style="height: 7rem; background-color: #4d8cf6;">
+		
+	</header>
+	
+	<div class="contentArea">
+		<div class="contentArea-text">
+			<h2 class="headingPart1">We are here to help</h2>
+			<h1 class="headingPart2">Contact Us</h1>
+		</div>
+		<img src="../resources/help-ContactUs.jpeg" alt="contactUs" class="imgContentArea">
+	</div>
+
+	<section class="chatBotSection">
+		
+		<img src="../resources/chatRobot1.jpg" alt="chatRobot" class="imgChatBot">
+
+		<div class="textChatBotSection">
+			<h3>ChatBot</h3>
+			<img src="../resources/chatRobot1.jpg" alt="chatRobot" class="imgChatBotHidden">
+			<p style="font-style: italic;">Still can't find what you're looking for?</p>
+			<p>
+				<span>BestBuy</span> ChatBot offers 24/7 support. Also our Customer Care agents are available to support if you need further assistance. Our agents are available:
+			</p>
+			<p>Mon-Fri 06:00 - 21:00 GMT <br>Sat 08:00 -18:00 GMT <br>Sun 09:00 - 18:00 GMT</p>
+			<button class="btnChatBot">
+				Lets Chat!
+			</button>
+		</div>
+
+	</section>
+
+	<section class="contactFormSection">
+		
+		<div class="baner">
+			<h1>Need to submit a claim?</h1>
+		</div>
+
+		<div class="formContainer">
+
+		<h3>If you want to report a problem or any kind of claim, please use the contact form below and we'll get back in touch with you as soon as we can!</h1>
+			
+		<div class="gridContainer">
+			<form action="#" id="survey-form">
+				
+				<label for="name" id="name-label">Your full Name:</label><br>
+				<input type="text" placeholder="Enter your full name" required id="name"><br>
+
+				<label for="email" id="email-label">Email:</label><br>
+				<input type="email" placeholder="Enter your email" id="email" required><br>
+
+				<p>Which option best describes your problem?</p>
+				<select id="dropdown">
+					<option value="ras">Remarks and Suggestions</option>
+					<option value="lostItem">Lost item</option>
+					<option value="refund">Refund</option>
+				</select><br>
+
+				<p class="comments">Please enter description</p>
+				<textarea placeholder="Enter your comment here.."></textarea><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+
+		</div>
+
+
+
+	</section>
+
+
+	<footer style="height: 10rem; background-color: grey">
+		
+	</footer>
+
+</body>
+</html>
