@@ -19,7 +19,8 @@
     display: block;
     animation-name: sliderAnimation;
     animation-duration: 1.7s;
-    opacity: 0.75
+    opacity: 0.75;
+    max-height: 50vh;
 }
 
 @keyframes sliderAnimation{
