@@ -13,31 +13,21 @@ function fetchBestSiderbarData(){
     setTimeout(async function(){
 
         try{
-
-            let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true)?format=json&show=name,longDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc&sort=releaseDate.dsc`)
+            //fetch 3 movies that are highly rated and on sale
+            let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true&customerReviewAverage>=4&type=movie)?format=json&pageSize=3&show=name,longDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc`)
             let data = await response.json();
         
             let products = data['products'];
             
-            let cnt = 1;
-            
             for(let x in products){
-
-                if(cnt === 4) {break}
-
-                populateBestSidebar(cnt,products[x]['name'], products[x]['image'], products[x]['salePrice'],
+              
+                populateBestSidebar(parseInt(x)+1,products[x]['name'], products[x]['image'], products[x]['salePrice'],
                                     products[x]['regularPrice'], products[x]['releaseDate'], products[x]['subclass'], 
                                     products[x]['longDescription'], products[x]['customerReviewAverage']);
 
-                cnt++;
-
             }
 
-        } catch(error){
-
-            console.log(error);
-
-        }
+        } catch(error) { console.log(error); } 
         
     },2000)
     
@@ -47,7 +37,6 @@ function fetchBestSiderbarData(){
 //to open modal window on click
 function populateBestSidebar(bestBarSection, productName, image, salePrice, regularPrice, releaseDate, categories, description, rating){
     
-   
     let getChildren = document.getElementsByClassName(`best-sidebar-item-${bestBarSection}`)[0].children;
 
     //set main info the the side bar
