@@ -25,7 +25,7 @@ header{
     width: 100%;
     border: 2px solid #a3a6ad;
     border-radius: 25%;
-    
+    transition: 1s;
 }
 
 #menuList{
