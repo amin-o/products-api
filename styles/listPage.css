@@ -1,0 +1,399 @@
+#listPageWrapper{
+
+   margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    
+   
+    align-items: stretch;
+  
+    padding: 5rem 3rem  20rem 3rem;
+    text-align: center;
+    background-color: rgba(0, 14, 32, 0.856);
+
+    
+     
+}
+p{
+    color: rgb(31, 31, 31);
+}
+
+.searchProductTitle{
+    font-size: 3rem;
+    grid-column: 3/11;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    
+}
+
+#listSearchText{
+
+    grid-column: 3/8;
+    border:none;
+    border-radius: 0.25rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0.75rem;
+ 
+}
+
+
+#listCategorySelect{
+
+    grid-column: 8/10;
+
+}
+
+
+#listSearchButton{
+
+    grid-column: 10/11;
+    border:none;
+     
+    background-color: #7eff75;
+    border-radius: 1rem;
+    font-weight: 600;
+   
+}
+
+
+#listSearchButton:hover{
+
+    background-color: #fcff47;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.listRadioInput{
+
+    grid-column: 3/5;
+    background-color: #ff757c;
+    border-radius: 1rem;
+    padding: 1rem;
+     
+    display: flex;
+    flex-direction: column;
+ 
+    text-align: left;
+    
+}
+ 
+label{
+
+    margin-top: 1rem;
+
+}
+
+.listRadioInput > p{
+
+    font-weight: 600;
+    margin-right: 1rem;
+
+}
+
+.listRadioInput input{
+
+    margin-right: 0.25rem; 
+
+}
+
+.listCheckboxes{
+
+    text-align: left;
+    grid-column: 5/8;
+    background-color: #ffb575;
+    
+    border-radius: 1rem;
+    padding: 1rem;
+     
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+}
+
+.listCheckboxes label{
+    
+    margin: 1rem auto 0.5rem 1rem;
+ 
+}
+
+.listCheckboxes > p{
+
+    grid-column: 1/3;
+    font-weight: 600;
+    margin-right: 1rem;
+  
+}
+
+.listCheckboxes input{
+
+    margin-right: 0.25rem; 
+
+}
+
+.userScoreWrapper{
+
+    text-align: left;
+    grid-column: 8/11;
+
+    background-color: #7585ff;
+    
+    border-radius: 1rem;
+    padding: 1rem;
+     
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+     
+ 
+}
+
+input, div{
+
+    -webkit-box-shadow: inset 0px 0px 41px -25px rgba(8,0,51,1);
+    -moz-box-shadow: inset 0px 0px 41px -25px rgba(8,0,51,1);
+    box-shadow: inset 0px 0px 41px -25px rgba(8,0,51,1);
+
+}
+
+.userScoreWrapper input{
+
+   height: 50%;
+   border:none;
+   padding: 0.25rem;
+   text-align: center;
+   border-radius: 0.5rem;  
+   font-weight: 600;
+}
+
+.userScoreWrapper p{
+   
+    font-weight: 600;
+    color: white;
+ 
+}
+
+/* slider */
+ .listSlider{
+
+    text-align: left;
+    grid-column: 8/11;
+
+    background-color: #0088ff;
+    
+    border-radius: 1rem;
+    padding: 1rem;
+     
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+ 
+}
+
+.listSlider p{
+  
+    font-weight: 600;
+    
+}
+
+.minimumUserScoreLabel{
+
+    text-align: left;
+    grid-column: 1/3;
+
+}
+
+#scoreTracker{
+
+    grid-column: 3;
+    padding: 0.5rem;
+    background-color: rgba(0, 14, 32, 0.856);
+    border-radius: 1rem;
+    color: white;
+    align-self: center;
+    font-size: 1.1rem;
+
+}
+
+#listSlider{
+   
+    grid-column: 1/4;
+    margin-top: 1rem;
+     
+}
+
+.ind-1{
+
+    grid-column: 1;
+    text-align: left;
+    font-size: 1.25rem;
+ 
+}
+
+.ind-2{
+
+    grid-column:3;
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+
+/*data display section */
+
+.data-display-section{
+
+    grid-column: 4/10;
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 1rem;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+    font-size: 0.9rem;
+}
+
+.data-display-section div{
+
+    box-shadow: none;
+    border: solid rgba(204, 204, 204, 0.459) 1px;
+    border-radius: 1rem;
+}
+
+.display-item{
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  
+
+}
+
+ 
+ 
+.display-item img{
+    
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+   
+    max-width: 12rem;
+    max-height: 12rem;
+    
+    border-radius: 1rem;
+
+    -webkit-box-shadow: 0px 0px 41px -11px rgba(8,0,51,0.61);
+    -moz-box-shadow: 0px 0px 41px -11px rgba(8,0,51,0.61);
+    box-shadow: 0px 0px 41px -11px rgba(8,0,51,0.61);
+}
+
+.display-item img:hover{
+    
+   transform: scale(1.1);
+   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 78px -16px rgba(0,136,255,1);
+    -moz-box-shadow: 0px 0px 78px -16px rgba(0,136,255,1);
+    box-shadow: 0px 0px 78px -16px rgba(0,136,255,1);
+    transition-duration: 0.5s;
+
+}
+
+.display-item-name{
+
+    font-weight: 600;
+    font-size: 1.3rem;
+   
+}
+
+.display-item-price{
+
+    font-weight: 600;
+   
+
+}
+
+.display-item-price-sale{
+
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #4dff40;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    -webkit-box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    -moz-box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    border-radius: 1rem;
+
+}
+
+.display-item-score{
+
+    font-weight: 600;
+    margin-top: auto;
+ 
+}
+
+.display-item-button{
+
+    background-color: #0088ff;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    -webkit-box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    -moz-box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    box-shadow: inset 0px 0px 41px -16px rgba(8,0,51,0.41);
+    color: white;
+ 
+}
+
+.display-item-button:hover{
+
+    background-color: #00427c;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: scale(1.03);
+}
+
+/* pagination */
+
+.pagination{
+    grid-column: 4/10;
+    
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pagination div{
+
+    margin: 0rem 0.25rem 0rem 0.25rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pagination div:hover{
+
+    background-color: rgb(252, 255, 96);
+    cursor: pointer;
+   
+    transition-duration: 0.5s;
+}
+
+.selectedPage{
+    color: white;
+    background-color: #00427c !important;
+
+}
+ 

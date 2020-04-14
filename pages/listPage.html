@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/listPage.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <script src='../scripts/listPage.js' defer></script>
+
+</head>
+
+<body>
+    
+        
+   
+
+    <div id="listPageWrapper" >
+
+        <h1 class="searchProductTitle">[SEARCH OUR PRODUCTS]</h1>
+        
+        <input type="text" id="listSearchText">
+        
+  
+        <select name="categorySelect" id="listCategorySelect">
+
+            <option value="music">Music</option> 
+            <option value="software">Software</option> 
+            <option value="Movie">Movie</option> 
+
+        </select>
+
+        <button id="listSearchButton">Search</button>
+
+        <div class="listRadioInput">
+
+            <p>Search by:</p>
+
+            <label for="searchRadio"><input type="radio" name="searchRadio" value="name" class='radioi'checked>Name</label>
+            <label for="searchRadio"><input type="radio" name="searchRadio" value="upc" class="radioi">UPC</label>
+            <label for="searchRadio"><input type="radio" name="searchRadio" value="format" class="radioi">Format</label>
+
+        </div> 
+     
+       <div class="listCheckboxes">
+
+            <p>Check for additional filters:</p>
+
+            <label for=""><input type="checkbox" name="nameRadio" class="addifilters">On Sale</label>
+            <label for=""><input type="checkbox" name="nameRadio" class="addifilters">Preowned</label>
+            <label for=""><input type="checkbox" name="nameRadio" class="addifilters">Home Delivery</label>
+            <label >
+                <input type="checkbox" name="nameRadio" class="addifilters">
+               Free Shipping
+            </label>
+           
+
+        </div>
+  
+        <div class="listSlider">
+
+            <p class="minimumUserScoreLabel">Minimum review average:</p>
+            <p id="scoreTracker">?</p>
+            <input type="range" min="1" max="5" value="2.5" step="0.1" class="slider" id="listSlider">
+            <p class="ind-1">1</p>
+            <p class="ind-2">5</p>
+
+        </div>
+
+        <div class="data-display-section" id="dataDisplay"></div>
+        
+        <div class="pagination" id="pagination"></div>
+
+
+    </div>
+
+    <footer>FOOTERJ</footer>
+
+</body>
+
+</html>
