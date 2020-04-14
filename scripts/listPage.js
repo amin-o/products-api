@@ -58,39 +58,47 @@ document.getElementById('listSearchButton').addEventListener('click', getInputAn
 
 async function fetchData(searchBase, input, category, onSale, preOwned, homeDelivery, freeShipping,minUserAvg){
 
-    let response = await fetch(`https://api.bestbuy.com/v1/products(${searchBase}=${input}*&type=${category}&freeShipping=${freeShipping}&homeDelivery=${homeDelivery}&preowned=${preOwned}&onSale=${onSale}&customerReviewAverage>=${minUserAvg})?apiKey=${api}&format=json&pageSize=52&show=image,name,customerReviewAverage,regularPrice,salePrice&sort=releaseDate.dsc`)
+    try {
 
-    let data = await response.json();
-       
-    let products = data['products'];
+        let response = await fetch(`https://api.bestbuy.com/v1/products(${searchBase}=${input}*&type=${category}&freeShipping=${freeShipping}&homeDelivery=${homeDelivery}&preowned=${preOwned}&onSale=${onSale}&customerReviewAverage>=${minUserAvg})?apiKey=${api}&format=json&pageSize=52&show=image,name,customerReviewAverage,regularPrice,salePrice&sort=releaseDate.dsc`)
 
-    let tempArr = [];
-    let storage = [];
+        let data = await response.json();
+        
+        let products = data['products'];
 
-    let i = 1;
+        let tempArr = [];
+        let storage = [];
 
-    for(let x in products){
+        let i = 1;
 
-        tempArr.push(products[x])
-     
-        if(i % 4 === 0){
-         
-            storage.push(tempArr);
-            tempArr = [];
-           
-        } 
+        for(let x in products){
 
-        i++;
+            tempArr.push(products[x])
+        
+            if(i % 4 === 0){
+            
+                storage.push(tempArr);
+                tempArr = [];
+            
+            } 
+
+            i++;
+        }
+
+        //show searchs on fetch
+        document.getElementById('pagination').style.display='flex';
+        document.getElementById('dataDisplay').style.display='grid';
+
+        //after u create a storage of all fetched items create pagination
+        createPaginationButtons(storage, storage.length);
+        displayItems(storage[0]);
+        updateSelectedPage(paginationState.current);
+
+    } catch (error){
+
+        console.log(error);
+
     }
-
-    //show searchs on fetch
-    document.getElementById('pagination').style.display='flex';
-    document.getElementById('dataDisplay').style.display='grid';
-
-    //after u create a storage of all fetched items create pagination
-    createPaginationButtons(storage, storage.length);
-    displayItems(storage[0]);
-    updateSelectedPage(paginationState.current);
 
 }
 

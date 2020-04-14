@@ -12,25 +12,33 @@ function fetchBestSiderbarData(){
     //give slider 2 seconds to fetch then start async fetch call
     setTimeout(async function(){
 
-        let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true)?format=json&show=name,longDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc&sort=releaseDate.dsc`)
-        let data = await response.json();
-       
-        let products = data['products'];
-         
-        let cnt = 1;
-        //console.log(products)
-        for(let x in products){
+        try{
 
-            if(cnt === 4) {break}
+            let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true)?format=json&show=name,longDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc&sort=releaseDate.dsc`)
+            let data = await response.json();
+        
+            let products = data['products'];
+            
+            let cnt = 1;
+            
+            for(let x in products){
 
-            populateBestSidebar(cnt,products[x]['name'], products[x]['image'], products[x]['salePrice'],
-                                products[x]['regularPrice'], products[x]['releaseDate'], products[x]['subclass'], 
-                                products[x]['longDescription'], products[x]['customerReviewAverage']);
+                if(cnt === 4) {break}
 
-            cnt++;
+                populateBestSidebar(cnt,products[x]['name'], products[x]['image'], products[x]['salePrice'],
+                                    products[x]['regularPrice'], products[x]['releaseDate'], products[x]['subclass'], 
+                                    products[x]['longDescription'], products[x]['customerReviewAverage']);
+
+                cnt++;
+
+            }
+
+        } catch(error){
+
+            console.log(error);
 
         }
-
+        
     },2000)
     
 }
