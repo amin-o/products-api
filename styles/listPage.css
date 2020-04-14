@@ -211,7 +211,7 @@ input, div{
 
     grid-column: 3;
     padding: 0.5rem;
-    background-color: rgba(0, 14, 32, 0.856);
+    background-color: rgb(0, 38, 87);
     border-radius: 1rem;
     color: white;
     align-self: center;
@@ -393,7 +393,7 @@ input, div{
 
 .selectedPage{
     color: white;
-    background-color: #00427c !important;
+    background-color: #0088ff !important;
 
 }
  
