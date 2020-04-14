@@ -13,7 +13,7 @@ function getInputAndFetch(){
     
     //get text input
     let searchInput = document.getElementById('listSearchText').value;
-    console.log(searchInput)
+  
     //get selected category
     let category = document.getElementById('listCategorySelect').options[document.getElementById('listCategorySelect').selectedIndex].value;
 
@@ -71,8 +71,9 @@ async function fetchData(searchBase, input, category, onSale, preOwned, homeDeli
 
         let i = 1;
         
+        //if no products have been fetched exit
         if(products.length === 0){ return;}
-
+        
         for(let x in products){
 
             tempArr.push(products[x])
