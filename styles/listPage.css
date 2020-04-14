@@ -361,6 +361,13 @@ input, div{
     transform: scale(1.03);
 }
 
+.regular-price-only{
+    
+    background-color: #4dff40;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
 /* pagination */
 
 .pagination{
@@ -396,4 +403,6 @@ input, div{
     background-color: #0088ff !important;
 
 }
- 
+
+
+

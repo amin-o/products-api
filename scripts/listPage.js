@@ -10,10 +10,10 @@ let paginationState = {
 
 //get data from all input fields and execute fetch function
 function getInputAndFetch(){
-
+    
     //get text input
     let searchInput = document.getElementById('listSearchText').value;
-
+    console.log(searchInput)
     //get selected category
     let category = document.getElementById('listCategorySelect').options[document.getElementById('listCategorySelect').selectedIndex].value;
 
@@ -58,14 +58,14 @@ document.getElementById('listSearchButton').addEventListener('click', getInputAn
 
 async function fetchData(searchBase, input, category, onSale, preOwned, homeDelivery, freeShipping,minUserAvg){
 
-    try {
+    try{
 
         let response = await fetch(`https://api.bestbuy.com/v1/products(${searchBase}=${input}*&type=${category}&freeShipping=${freeShipping}&homeDelivery=${homeDelivery}&preowned=${preOwned}&onSale=${onSale}&customerReviewAverage>=${minUserAvg})?apiKey=${api}&format=json&pageSize=52&show=image,name,customerReviewAverage,regularPrice,salePrice&sort=releaseDate.dsc`)
 
         let data = await response.json();
         
         let products = data['products'];
-
+     
         let tempArr = [];
         let storage = [];
 
@@ -85,6 +85,11 @@ async function fetchData(searchBase, input, category, onSale, preOwned, homeDeli
             i++;
         }
 
+        //check if temp array is empty. if it isnt push onto the storage
+        if(tempArr.length !== 0){
+            storage.push(tempArr)
+        }
+
         //show searchs on fetch
         document.getElementById('pagination').style.display='flex';
         document.getElementById('dataDisplay').style.display='grid';
@@ -92,14 +97,15 @@ async function fetchData(searchBase, input, category, onSale, preOwned, homeDeli
         //after u create a storage of all fetched items create pagination
         createPaginationButtons(storage, storage.length);
         displayItems(storage[0]);
-        updateSelectedPage(paginationState.current);
+        
+        updateSelectedPage(1)
 
-    } catch (error){
+    } catch(error){
 
-        console.log(error);
+        console.log(error)
 
     }
-
+       
 }
 
  
@@ -114,15 +120,16 @@ function displayItems(arr){
         
         let div = document.createElement('div');
         div.classList.add('display-item');
+       
+        if(arr[x]['regularPrice'] === arr[x]['salePrice']){
 
-        div.innerHTML = `
-        
-            <img class="display-item-image" src="${arr[x]['image']}" onerror="this.src='/resources/missingImage.png'">
-            <p class="display-item-name">${arr[x]['name']}</p>
-            <p class="display-item-score">Average Customer Score: ${arr[x]['customerReviewAverage']}</p>
-            <p class="display-item-price">Regular Price: ${arr[x]['regularPrice']}</p>
-            <p class="display-item-price-sale">Sale Price: ${arr[x]['salePrice']}</p>
-            <button class="display-item-button">Buy</button>`
+            div.innerHTML = constructDivElement(arr,x,2);
+
+        } else{
+
+            div.innerHTML = constructDivElement(arr,x,1);
+
+        }
 
         dataDisplay.appendChild(div);
 
@@ -130,6 +137,33 @@ function displayItems(arr){
     
 }
 
+//construct div based on option parameter 1 - styled price, 2 - removed sale price block
+function constructDivElement(arr,x,option){
+
+    if(option === 1){
+
+        return `
+        
+            <img class="display-item-image" src="${arr[x]['image']}" onerror="this.src='/resources/missingImage.png'">
+            <p class="display-item-name">${arr[x]['name']}</p>
+            <p class="display-item-score">Average Customer Score: ${arr[x]['customerReviewAverage']}</p>
+            <p class="display-item-price">Regular Price: ${arr[x]['regularPrice']}</p>
+            <p class="display-item-price-sale">Sale Price: ${arr[x]['salePrice']}</p>
+            <button class="display-item-button">Add to Cart</button>`
+
+    } else if(option === 2){
+
+        return `
+        
+            <img class="display-item-image" src="${arr[x]['image']}" onerror="this.src='/resources/missingImage.png'">
+            <p class="display-item-name">${arr[x]['name']}</p>
+            <p class="display-item-score">Average Customer Score: ${arr[x]['customerReviewAverage']}</p>
+            <p class="display-item-price regular-price-only">Regular Price: ${arr[x]['regularPrice']}</p>
+            <button class="display-item-button">Add to Cart</button>`
+
+    }
+
+}
 
 
 //change color of the selected page at the bottom of the page
