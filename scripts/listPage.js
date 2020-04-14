@@ -70,6 +70,8 @@ async function fetchData(searchBase, input, category, onSale, preOwned, homeDeli
         let storage = [];
 
         let i = 1;
+        
+        if(products.length === 0){ return;}
 
         for(let x in products){
 
