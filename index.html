@@ -10,12 +10,12 @@
 
     <!-- css -->
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/facebookSidebar.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/bestSiderbar.css">
-    <link rel="stylesheet" href="styles/facebookSidebar.css">
-    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/slider.css">
+     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/footer.css">
     
 
@@ -44,7 +44,7 @@
                     <div class="menu">
                         
                         <div class="menuItem active" id="home"><a href="index.html">Home</a></div>
-                        <div class="menuItem" id="list"><span>List</span>
+                        <div class="menuItem" id="list"><span><a href="pages/listPage.html">List</a></span>
                             <div class="menuList" id="menuList">
                                 <div class="menuItem">Link</div>
                                 <div class="menuItem">Link</div>
@@ -122,13 +122,9 @@
                 <!-- modal content-->
                 <div class="modal-content fadeIn">
 
-                    <!-- close button--> 
-                    <button id="modalCloseButton" class="modal-close-button">x</button>
-                
                     <!-- modal window for slider-->
                     <div id="sliderModal" class="slider-modal">
 
-                
                         <img class="modal-slider-product-image" src="" alt="missing image">
                     
                         <div class="modal-slider-info-section">
@@ -145,9 +141,9 @@
 
                         </div>
 
+                         <button id="modalCloseButton" class="modal-close-button">X</button>
                     </div>
                         
-
                 </div>
                    
             </div>

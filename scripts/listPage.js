@@ -118,8 +118,6 @@ function displayItems(arr){
         div.innerHTML = `
         
             <img class="display-item-image" src="${arr[x]['image']}" onerror="this.src='/resources/missingImage.png'">
-
-     
             <p class="display-item-name">${arr[x]['name']}</p>
             <p class="display-item-score">Average Customer Score: ${arr[x]['customerReviewAverage']}</p>
             <p class="display-item-price">Regular Price: ${arr[x]['regularPrice']}</p>
