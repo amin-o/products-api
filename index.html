@@ -9,6 +9,7 @@
     <title>Products API Main Page</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="styles/topRated.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/facebookSidebar.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -27,7 +28,7 @@
     <script src="scripts/slider.js" defer></script>
     <script src='scripts/bestSidebar.js' defer></script>
     <script src="scripts/facebookSidebar.js" defer></script>
-     
+    <script src="scripts/topRated.js" defer></script>
 </head>
  
     <body>
@@ -66,11 +67,8 @@
 
             <!-- slider sectin-->
             <div id="slider">
-			
         	    <i class="fas fa-chevron-left sliderNavigationBtn sliderPreviousBtn"></i>
-
                 <i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
-            
             </div>   
 
             <!-- best sidebar -->
@@ -102,19 +100,75 @@
                     <button class="best-sidebar-buy-button" id="bestSiderbarDetails">Details</button>
                 
                 </div>
-
             </div>
 
             <!-- facebook sidebar -->
             <div id="facebookSidebar">
-
                 <iframe id="fb" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
             </div>
 
             <!-- top rated -->
             <div id="topRated">
-                TOP RATED SECTION
+                <h2  class="headingTopRated">Top Rated Items on sale: </h2>
+
+                <div class="gridTopRated">
+                    
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+                    
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+                    
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+                    
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+
+                    <div class="topRateditem">
+                        <img src="resources/chatRobot2.jpeg" alt="test" class="imgTopRatedItem">
+                        <div class="topRatedInfo">
+                            <p class="titleTopRatedItem">Cokolada 100 grama</p>
+                            <p class="descTopRatedItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="priceTopRatedItem">Cijena: 20</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="loadMore">Load More</button>
             </div>
         
             <!-- modal window -->

@@ -1,9 +1,10 @@
 #indexWrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    grid-column-gap: 1rem;
     margin-left: 5rem;
     margin-right: 5rem;
+    grid-row-gap: 3rem;
 }
 
 header{
@@ -26,13 +27,6 @@ header{
     
     width: 100%;
     background-color: white;;
-}
-
-#topRated{
-    grid-row: 5/11;
-    grid-column: 1/10;
-    width: 100%;
-    background-color: palegreen;
 }
 
 footer{

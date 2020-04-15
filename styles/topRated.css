@@ -1,0 +1,61 @@
+#topRated{
+	grid-row-start: 5;
+    grid-column: 1/10;
+    width: 100%;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+.gridTopRated{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 0 1rem;
+}
+.headingTopRated{
+	text-align: center;
+	font-weight: 600;
+	color: black;
+}
+.topRateditem{
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.topRatedInfo{
+
+}
+.imgTopRatedItem{
+	max-width: 100%;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    display: block;
+}
+.descTopRatedItem{
+	font-size: 1rem;
+    margin: 0;
+}
+.titleTopRatedItem{
+	color: #455b86;
+	font-weight: 700;
+}
+.priceTopRatedItem{
+	    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.loadMore{
+	background-color: #FEFEFE;
+    padding: 1rem 2rem;
+    border: 2px solid #447ADB;
+    color: #447ADB;
+    margin: 1rem 0;
+    font-size: 1.rem;
+    font-size: 1rem;
+}
+.loadMore:hover{
+	background-color: #447ADB;
+	color: #FEFEFE;
+	border:0;
+	cursor: pointer;
+}
