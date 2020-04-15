@@ -9,6 +9,7 @@ let mouseOverSlider = false;
 let sliderFirstElIndex = 0;
 let sliderMidElIndex = 1;
 let sliderLastElIndex = 2;
+
 var sliderItems = [];
 
 slider.addEventListener('mouseenter', function(){
@@ -17,12 +18,10 @@ slider.addEventListener('mouseenter', function(){
 })
 slider.addEventListener('mouseleave', function(){
 mouseOverSlider = false;
-//autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
+autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
 })
 
-//let autoSlider = setInterval(sliderLoadAuto, 4300);
-
-
+let autoSlider = setInterval(sliderLoadAuto, 4300); //svakih 4 sekunde pozovi funkciju za ucitavanje novih itema slidera
 
 function sliderLoadAuto(){
    sliderLoadNext();
@@ -47,6 +46,7 @@ fetch(`https://api.bestbuy.com/v1/products(releaseDate<=today&longDescription=*)
 function loadSlider(jsonResponse){
     //initial slider load - show first 3 items from response
     sliderItems = jsonResponse;
+    
     if (window.innerWidth > 768){
         sliderShowElements([0,1,2]);
     }else if (window.innerWidth>425){

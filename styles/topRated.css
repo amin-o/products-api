@@ -16,7 +16,7 @@
 	font-weight: 600;
 	color: black;
 }
-.topRateditem{
+.topRatedItem{
 	background-color: #FFFFFF;
 	text-align: center;
 }
@@ -43,6 +43,9 @@
 .priceTopRatedItem{
 	    font-weight: 600;
     margin-top: 0.5rem;
+}
+.salePriceTopItem{
+
 }
 .loadMore{
 	background-color: #FEFEFE;
