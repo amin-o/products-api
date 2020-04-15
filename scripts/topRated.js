@@ -1,17 +1,23 @@
 let gridTopRated = document.querySelector('.gridTopRated');
 let topRated = document.querySelector('#topRated');
+let btnLoadMore = document.querySelector('.loadMore');
+btnLoadMore.addEventListener('click', loadMoreTopItems);
 
 var pageSize = 6;
 var page = 1; //prikazi prvih 6 podataka
-url = `https://api.bestbuy.com/v1/products(shortDescription=*&customerReviewAverage>4&customerReviewAverage<5&onSale=true&(type=game|type=movie|type=music))?apiKey=${apiKey}&format=json&show=sku,name,longDescription,shortDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage,onSale&sort=customerReviewAverage.desc&pageSize=${pageSize}&page=${page}`;
-fetchData(url);
+fetchData();
+
+pageSize = 3 //u buduce uvijek ucitavaj samo po tri! jedino prvi put 6.
+page = 2; // u prvom sledecem pozicu inkrementiracemo i bice na stranici 3 kao sto treba
+
 //api poziv je takav da:
 //vraca nam proizvode iz kategorije games, music, movie
 //samo proizvodi sa ocjenom izmedju 4 i 5
 //osim toga, onSale = true, sto znaci da su svi na akciji
 //koristimo i paginaciju, pagesize = 6 inicijalno, a kasnije ce biti po 3
 
-async function fetchData(url){
+async function fetchData(){
+	url = `https://api.bestbuy.com/v1/products(shortDescription=*&customerReviewAverage>4&customerReviewAverage<5&onSale=true&(type=game|type=movie|type=music))?apiKey=${apiKey}&format=json&show=sku,name,longDescription,shortDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage,onSale&sort=customerReviewAverage.desc&pageSize=${pageSize}&page=${page}`;
 	try{
 		let response = await fetch(url);
 		let json = await response.json();
@@ -75,4 +81,9 @@ function elWithClass(el,className){
 	let a = document.createElement(el);
 	a.className = className;
 	return a;
+}
+
+function loadMoreTopItems(){
+ page++;
+ fetchData();
 }
