@@ -8,7 +8,7 @@
    
     align-items: stretch;
   
-    padding: 5rem 3rem  20rem 3rem;
+    padding: 3rem 0rem  20rem 0rem;
     text-align: center;
     background-color: rgba(0, 14, 32, 0.856);
 
@@ -51,7 +51,8 @@ p{
     grid-column: 10/11;
     border:none;
      
-    background-color: #7eff75;
+    background-color: #d04fff;
+  
     border-radius: 1rem;
     font-weight: 600;
    
@@ -60,7 +61,8 @@ p{
 
 #listSearchButton:hover{
 
-    background-color: #fcff47;
+    background-color: #8300b3;
+    color: white;
     border-radius: 1rem;
     font-weight: 600;
     transition-duration: 0.5s;
@@ -72,7 +74,7 @@ p{
 .listRadioInput{
 
     grid-column: 3/5;
-    background-color: #ff757c;
+    background-color: #ff904f;
     border-radius: 1rem;
     padding: 1rem;
      
@@ -106,7 +108,7 @@ label{
 
     text-align: left;
     grid-column: 5/8;
-    background-color: #ffb575;
+    background-color: #ffe84f;
     
     border-radius: 1rem;
     padding: 1rem;
@@ -141,7 +143,7 @@ label{
     text-align: left;
     grid-column: 8/11;
 
-    background-color: #7585ff;
+    background-color: #7559ff;
     
     border-radius: 1rem;
     padding: 1rem;
@@ -183,7 +185,7 @@ input, div{
     text-align: left;
     grid-column: 8/11;
 
-    background-color: #0088ff;
+    background-color: #4fb3ff;
     
     border-radius: 1rem;
     padding: 1rem;
