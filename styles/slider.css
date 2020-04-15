@@ -132,3 +132,40 @@
     max-height: 40vh;
     }
 }
+
+@media (max-width: 640px){
+    body,html{
+        font-size: 16px;
+    }
+    #indexWrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+}
+
+@media (max-width: 425px){
+    body,html{
+        font-size: 14px;
+    }
+    #slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sliderItem {
+    margin: 0 3rem;
+    }
+    .sliderNavigationBtn {
+        font-size: 7vw;
+    }
+    .sliderReadMoreBtn {
+    padding: 2.5vw 3.5vw;
+    }
+    .sliderProductTitle {
+        font-size: 4vw;
+    }
+}
+@media (max-width: 375px){
+    
+}
+@media (max-width: 320px){
+    
+}

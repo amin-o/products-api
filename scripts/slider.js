@@ -49,8 +49,10 @@ function loadSlider(jsonResponse){
     sliderItems = jsonResponse;
     if (window.innerWidth > 768){
         sliderShowElements([0,1,2]);
-    }else{
+    }else if (window.innerWidth>425){
          sliderShowElements([0,1]);
+    }else{
+        sliderShowElements([0]);
     }
    
 }
@@ -105,10 +107,13 @@ function sliderLoadNext(){
         sliderMidElIndex = (sliderMidElIndex + 3 ) % 10;
         sliderLastElIndex = (sliderLastElIndex + 3 ) % 10;
         sliderShowElements([sliderFirstElIndex, sliderMidElIndex, sliderLastElIndex]);    
-    }else{
+    }else if (window.innerWidth>425){
         sliderFirstElIndex =(sliderFirstElIndex + 2 ) % 10;
         sliderMidElIndex = (sliderMidElIndex + 2 ) % 10;
          sliderShowElements([sliderFirstElIndex, sliderMidElIndex]);
+    }else{
+        sliderFirstElIndex =(sliderFirstElIndex + 1 ) % 10;
+        sliderShowElements([sliderFirstElIndex]);
     }
     
 }
@@ -121,10 +126,13 @@ function sliderLoadPrevious(){
         sliderMidElIndex = (sliderMidElIndex + 7 ) % 10;
         sliderLastElIndex = (sliderLastElIndex + 7 ) % 10;
         sliderShowElements([sliderFirstElIndex, sliderMidElIndex, sliderLastElIndex]);
-}else{
+}else if (window>425){
     sliderFirstElIndex =(sliderFirstElIndex + 8 ) % 10;
     sliderMidElIndex = (sliderMidElIndex + 8 ) % 10;
     sliderShowElements([sliderFirstElIndex, sliderMidElIndex]);
+}else{
+    sliderFirstElIndex =(sliderFirstElIndex + 9 ) % 10;
+    sliderShowElements([sliderFirstElIndex]);
 }
     
 }
