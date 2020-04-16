@@ -74,11 +74,13 @@ footer ul a{
      
     display: inline-block;
     margin: 0.5rem 0.5rem;
+    transition: all 0.7s;
 }
 
 footer ul a:hover{
     color: rgb(255, 136, 0);
     cursor: pointer;
+    transform: translateY(10px);
 }
 
 .social{
