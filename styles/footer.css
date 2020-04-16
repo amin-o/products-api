@@ -78,7 +78,7 @@ footer ul a{
 
 footer ul a:hover{
     color: rgb(255, 136, 0);
- 
+    cursor: pointer;
 }
 
 .social{
