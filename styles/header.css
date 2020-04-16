@@ -103,6 +103,7 @@ header nav{
     border: 2px solid white;
     background-color: rgb(41, 44, 175);
     border-radius: 5rem;
+    font-weight: bold;
 }
 
 .sub-menu{
@@ -113,6 +114,7 @@ header nav{
 .sub-menu a:hover{
     border: none;
     background-color: lightblue;
+    font-weight: bold;
 }
 
 .btn{
@@ -131,6 +133,7 @@ header nav{
 .btn:hover a{
     background-color:lightblue;
     border: none;
+    font-weight: bold;
 }
 
 .btn:hover{
@@ -232,6 +235,7 @@ header nav{
         border: none;
         background: rgb(36, 52, 102);
         width: auto;
+        font-weight: bold;
     }
 
     #btn{
