@@ -26,7 +26,6 @@
 .topRatedItem{
     border-radius: 1rem;
     border: 2px solid rgba(0, 0, 226, 0.233);
-    padding :1rem;
 	background-color: #FFFFFF;
 	text-align: center;
 }
