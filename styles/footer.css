@@ -1,6 +1,15 @@
 footer{
-   width: 100%;
-   display: block;
+    width: 100%;
+    display: block;
+  
+    margin-top: 10rem;
+    width: 100%;
+    height: auto;
+    grid-column: 1/13;
+    background-color: rgb(255, 255, 255);
+    border-top: solid rgb(160, 160, 160) 1px;
+
+
 }
 
 .innerFooter{

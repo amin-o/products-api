@@ -102,6 +102,12 @@ header nav{
     color: yellow;
     border: 2px solid white;
     background-color: rgb(41, 44, 175);
+    border-radius: 5rem;
+}
+
+.sub-menu{
+    padding-left: 0;
+ 
 }
 
 .sub-menu a:hover{
@@ -142,7 +148,8 @@ header nav{
     top: 5rem;
     opacity: 0;
     visibility: hidden;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-out;
+    padding-left: 2rem;
 }
 
 .sub-menu::before{
@@ -168,7 +175,8 @@ header nav{
 }
 
 .active{
-    background-color: rgb(113, 224, 99);
+    background-color: rgb(79, 240, 167);
+    border-radius: 5rem;
 }
 
 @media screen and (max-width: 800px){
@@ -183,7 +191,7 @@ header nav{
         left: -2rem;
         height: auto;
         flex-direction: column;
-        background-color: lightblue;
+        background-color: rgb(70, 50, 255);
         align-items: initial;
         border-bottom: 3px solid rgb(41, 44, 175);
     }
@@ -199,7 +207,7 @@ header nav{
         border-left-color: black;
         margin-left: -1rem;
         max-height: 0;
-        width: 10vw;
+        width: auto;
     }
     
     .sub-menu::before{
@@ -212,10 +220,15 @@ header nav{
         max-height: initial;
     }
 
+    .nav-list a{
+        margin-right: 0.5rem;
+    }
+
     .nav-list a:hover{
         color: yellow;
         border: none;
-        background: rgb(41, 44, 175);
+        background: rgb(36, 52, 102);
+        width: auto;
     }
 
     #btn{
@@ -230,16 +243,8 @@ header nav{
         display: block;
     }
 
-    .ion-md-close{
-        display: none;
-    }
-
-    nav .active .ion-md-close{
-        display: block;
-    }
-
-    nav .active .ion-md-menu{
-        display: none;
+    .sub-menu a{
+        margin-left: -1.5rem;
     }
 
     #menu{
