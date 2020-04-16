@@ -1,7 +1,15 @@
 footer{
+    width: 100%;
+    display: block;
+  
+   
    width: 100%;
-   display: block;
-    margin-top: 10rem;
+   height: auto;
+   grid-column: 1/13;
+   background-color: rgb(255, 255, 255);
+   border-top: solid rgb(160, 160, 160) 1px;
+
+
 }
 
 .innerFooter{
@@ -51,25 +59,28 @@ h2{
     
 }
 
-ul{
+footer ul{
     list-style: none;
     color: rgb(41, 44, 175);
     font-size: 0.8rem;
     margin-left:-2rem;
+   
 }
 
-ul a{
+footer ul a{
     text-decoration: none;
     outline: none;
     color: rgb(41, 44, 175);;
-    
+     
     display: inline-block;
     margin: 0.5rem 0.5rem;
+    transition: all 0.7s;
 }
 
-ul a:hover{
+footer ul a:hover{
     color: rgb(255, 136, 0);
- 
+    cursor: pointer;
+    transform: translateY(10px);
 }
 
 .social{
@@ -110,16 +121,40 @@ ul a:hover{
 
 @media screen and (max-width: 1000px){
     
-    .footerItems{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px){
     .innerFooter{
         flex-direction: column;
     }
     .footerItems{
         width: 100%;
     }
+    footer ul{
+        list-style: none;
+        color: rgb(41, 44, 175);
+        font-size: 0.8rem;
+        margin-left:-2rem;
+        text-align: center;
+    }
+
+    .footerItems p{
+    
+    text-align: center;
+    
+    }
+
+    .footerItems{
+   
+        padding: 0rem;
+  
+    }
+    h1{
+        padding: 0rem;
+       
+    }
+    .border{
+        height: 0.1rem;
+        width: 90%;
+        margin: auto;
+        background-color: rgb(41, 44, 175);
+    
+    }   
 }
