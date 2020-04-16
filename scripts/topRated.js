@@ -54,6 +54,12 @@ function appendNewTopRatedItem(name, image, shortDescription, longDescription, r
 
 	let img = elWithClass('img', 'imgTopRatedItem');
 	img.src=image;
+	img.addEventListener('click', function(){
+
+setSliderModalValues(image, name, longDescription, customerReviewAverage, type, regularPrice, salePrice, releaseDate)		
+
+	});
+
 
 	let title = elWithClass('p', "titleTopRatedItem");
 	title.innerText = name;
