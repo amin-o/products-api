@@ -8,11 +8,11 @@
 .headingTopRated{
 	text-align: center;
 	font-weight: 600;
-	color: black;
+	color: rgb(0, 22, 150);
 }
 .topRatedItem{
     border-radius: 1rem;
-    border: 2px solid rgba(0, 0, 128, 0.233);
+    border: 2px solid rgba(0, 0, 226, 0.233);
     padding :1rem;
 	background-color: #FFFFFF;
 	text-align: center;

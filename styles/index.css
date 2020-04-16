@@ -8,33 +8,36 @@
 }
 
 header{
+
     grid-row: 1;
     grid-column: 1/13;
     width: 100%;
     height: 5rem;
     background-color: rgb(70, 50, 255);
     margin-bottom: 3rem;
+
 }
 
+ 
 #bestSidebar{
-    grid-row: 2/4;
+    grid-row-start: 3;
     grid-column: 10/13;  
 }
 
 #facebookSidebar{
-    grid-row: 5;
+   
     grid-column: 10/13;
-    
-    width: 100%;
+    grid-row-start: 4;
+     
     background-color: white;;
 }
 
 #topRated{
 
-	grid-row: 3/4;
+	grid-row: 3/6;
     grid-column: 1/10;
     
-    background-color: rgba(243, 243, 243, 0.753);
+    background-color: rgba(243, 243, 243, 0.438);
      
     border-radius: 1rem;
     text-align: center;
