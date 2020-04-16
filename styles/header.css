@@ -149,7 +149,7 @@ header nav{
     opacity: 0;
     visibility: hidden;
     transition: all 1s ease-out;
-    padding-left: 2rem;
+    padding-left: 0px;
 }
 
 .sub-menu::before{
@@ -179,6 +179,8 @@ header nav{
     border-radius: 5rem;
 }
 
+
+
 @media screen and (max-width: 800px){
     
     .notactive{
@@ -206,6 +208,7 @@ header nav{
         border: 3px solid transparent;
         border-left-color: black;
         margin-left: -1rem;
+        padding-left: 2rem;
         max-height: 0;
         width: auto;
     }
