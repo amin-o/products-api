@@ -17,14 +17,22 @@ header{
 
  
 #bestSidebar{
+<<<<<<< HEAD
     grid-row-start: 2;
+=======
+    grid-row: 2/4;
+>>>>>>> bd9da979bcd7b9db441b140ad38bb6c179adb9ab
     grid-column: 10/13;  
 }
 
 #facebookSidebar{
    
     grid-column: 10/13;
+<<<<<<< HEAD
     grid-row-start: 3;
+=======
+    grid-row: 4;
+>>>>>>> bd9da979bcd7b9db441b140ad38bb6c179adb9ab
      
     background-color: white;;
 }
@@ -32,7 +40,7 @@ header{
 
 
 footer{
-    margin-top: 1rem;
+    margin-top: 10rem;
     width: 100%;
     height: auto;
     grid-column: 1/13;
