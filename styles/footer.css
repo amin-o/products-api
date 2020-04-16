@@ -110,12 +110,6 @@ ul a:hover{
 
 @media screen and (max-width: 1000px){
     
-    .footerItems{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px){
     .innerFooter{
         flex-direction: column;
     }
