@@ -34,7 +34,7 @@ function handleErrors(response) {
     return response;
 }
 
-fetch(`https://api.bestbuy.com/v1/products(releaseDate<=today&longDescription=*)?apiKey=${apiKey}&format=json&show=sku,name,longDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage&sort=releaseDate.dsc`)
+fetch(`https://api.bestbuy.com/v1/products(releaseDate<=today)?apiKey=${apiKey}&format=json&show=sku,name,shortDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage&sort=releaseDate.dsc`)
     .then(handleErrors)
     .then(response => response.json())
     .then(response => response.products)
@@ -60,14 +60,14 @@ function loadSlider(jsonResponse){
 function sliderShowElements(arrIndexes){
     arrIndexes.forEach(function(i){
         let name = sliderItems[i].name;
-        let longDescription = sliderItems[i].longDescription;
+        let shortDescription = sliderItems[i].shortDescription;
         let image = sliderItems[i].image;
         let regularPrice = sliderItems[i].regularPrice;
         let salePrice = sliderItems[i].salePrice;salePrice;
         let releaseDate = sliderItems[i].releaseDate;
         let type = sliderItems[i].type;
         let customerReviewAverage = sliderItems[i].customerReviewAverage;
-        appendNewSliderItem(name,longDescription,image, regularPrice, salePrice, releaseDate,type, customerReviewAverage);
+        appendNewSliderItem(name,shortDescription,image, regularPrice, salePrice, releaseDate,type, customerReviewAverage);
     })
 }
 

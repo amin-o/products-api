@@ -17,7 +17,7 @@ page = 2; // u prvom sledecem pozicu inkrementiracemo i bice na stranici 3 kao s
 //koristimo i paginaciju, pagesize = 6 inicijalno, a kasnije ce biti po 3
 
 async function fetchData(){
-	url = `https://api.bestbuy.com/v1/products(shortDescription=*&customerReviewAverage>4&customerReviewAverage<5&onSale=true&(type=game|type=movie|type=music))?apiKey=${apiKey}&format=json&show=sku,name,longDescription,shortDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage,onSale&sort=customerReviewAverage.desc&pageSize=${pageSize}&page=${page}`;
+	url = `https://api.bestbuy.com/v1/products(shortDescription=*&customerReviewAverage>4&customerReviewAverage<5&onSale=true&(type=game|type=movie|type=music))?apiKey=${apiKey}&format=json&show=sku,name,shortDescription,image,regularPrice,salePrice,releaseDate,type,customerReviewAverage,onSale&sort=customerReviewAverage.desc&pageSize=${pageSize}&page=${page}`;
 	try{
 		let response = await fetch(url);
 		let json = await response.json();
@@ -34,7 +34,7 @@ function fillTopRated(json){
 	console.log(topRatedItems);
 	topRatedItems.forEach(item => {
 		let name = item.name;
-        let longDescription = item.longDescription;
+         
         let shortDescription = item.shortDescription;
         let image = item.image;
         let regularPrice = item.regularPrice;
@@ -42,7 +42,7 @@ function fillTopRated(json){
         let releaseDate = item.releaseDate;
         let type = item.type;
         let customerReviewAverage = item.customerReviewAverage;
-        appendNewTopRatedItem(name, image, shortDescription, longDescription, regularPrice, salePrice, releaseDate, type,customerReviewAverage);
+        appendNewTopRatedItem(name, image, shortDescription, shortDescription, regularPrice, salePrice, releaseDate, type,customerReviewAverage);
 	})
 }
 

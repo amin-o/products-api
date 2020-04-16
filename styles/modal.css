@@ -10,13 +10,14 @@
     height: 100%; 
     
     background-color: rgba(0, 8, 31, 0.83);
-    color:white;
+    color:black !important;
 }
 
 .modal img{
     width: 100%;
     max-width: 20rem;
     max-height: 50vh;
+   
     object-fit: cover;
 }
  
@@ -45,6 +46,7 @@
     border: none;
     height: 3.5rem;
     width: 3.5rem;
+    min-width: 3.5rem;
    
     background-color: rgb(199, 0, 0);
     font-size: 1.75rem;
@@ -52,7 +54,9 @@
     margin-left: auto;
     border-radius:1rem;
     font-weight: 600;
-
+   -webkit-box-shadow: 0px 0px 153px -35px rgba(242,12,12,1);
+    -moz-box-shadow: 0px 0px 153px -35px rgba(242,12,12,1);
+    box-shadow: 0px 0px 153px -35px rgba(242,12,12,1);
 }
 
 .modal-close-button:hover{
@@ -69,7 +73,7 @@
 .slider-modal{
     display: flex;
     flex-direction: row;
-    background-color: #131313;
+    background-color: #e7e7e7;
 }
 
 .modal-slider-info-section{
@@ -95,14 +99,14 @@ div[class^="modal-slider-product"] div{
 
 .modal-title{
     background-color: rgb(0, 0, 36);
-    color: white;
+    color: black !important;
     font-size: 0.8rem;
 }
 
 .add-to-cart-modal{
 
     border:none;
-    background-color: rgb(0, 144, 36);
+    background-color: rgb(0, 126, 31);
     color: white;
     margin: 1rem;
     padding:1rem;
@@ -115,7 +119,7 @@ div[class^="modal-slider-product"] div{
 .add-to-cart-modal:hover{
 
      
-    background-color: rgb(6, 88, 0);
+    background-color: rgb(5, 68, 0);
     transition-duration: 0.5s;
     
     cursor: pointer;
@@ -123,14 +127,14 @@ div[class^="modal-slider-product"] div{
 
 .modal-slider-product-category{
     
-    color: rgb(255, 179, 0) !important;
+    color: rgb(126, 71, 0) !important;
     
     
 }
 
 .modal-slider-product-price-sale{
     font-size: 1.0rem !important;
-    color: #00c000 !important;
+    color: #009900 !important;
     font-weight: 600;
     text-decoration: underline;
 }
@@ -145,14 +149,16 @@ div[class^="modal-slider-product"] div{
 .modal-slider-product-name{
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #202020;
 }
 
 .modal-slider-product-rating{
-    color: white !important;
+    color: rgb(22, 22, 22) !important;
 }
 
-
+.modal-slider-product-description{
+    color: black !important;
+}
 /*animations8*/
 
 @-webkit-keyframes fadeIn {

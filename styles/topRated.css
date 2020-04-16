@@ -1,10 +1,4 @@
-#topRated{
-	grid-row-start: 5;
-    grid-column: 1/10;
-    width: 100%;
-    background-color: #EEEEEE;
-    text-align: center;
-}
+
 .gridTopRated{
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,12 +11,13 @@
 	color: black;
 }
 .topRatedItem{
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 0, 128, 0.233);
+    padding :1rem;
 	background-color: #FFFFFF;
 	text-align: center;
 }
-.topRatedInfo{
-
-}
+ 
 .imgTopRatedItem{
 	max-width: 100%;
     border-radius: 50%;
@@ -33,21 +28,29 @@
     display: block;
     cursor: pointer;
 }
+
+.imgTopRatedItem:hover{
+    
+    transform: scale(1.1);
+    border-radius: 0rem;
+    transition-duration: 0.5s;
+}
+
 .descTopRatedItem{
-	font-size: 1rem;
+	font-size: 0.9rem;
     margin: 0;
 }
 .titleTopRatedItem{
-	color: #455b86;
+	color: #19408f;
 	font-weight: 700;
 }
 .priceTopRatedItem{
 	    font-weight: 600;
     margin-top: 0.5rem;
+    color: rgb(0, 163, 0);
+    font-size: 0.9rem;
 }
-.salePriceTopItem{
-
-}
+ 
 .loadMore{
 	background-color: #FEFEFE;
     padding: 1rem 2rem;
@@ -56,10 +59,12 @@
     margin: 1rem 0;
     font-size: 1.rem;
     font-size: 1rem;
+    border-radius: 1rem;
 }
 .loadMore:hover{
 	background-color: #447ADB;
 	color: #FEFEFE;
-	border:0;
-	cursor: pointer;
+ 
+    cursor: pointer;
+    transition-duration: 0.5s;
 }

@@ -17,20 +17,32 @@ header{
 }
 
 #bestSidebar{
-    grid-row: 2/6;
+    grid-row: 2/4;
     grid-column: 10/13;  
 }
 
 #facebookSidebar{
-    grid-row: 6/11;
+    grid-row: 5;
     grid-column: 10/13;
     
     width: 100%;
     background-color: white;;
 }
 
+#topRated{
+
+	grid-row: 3/4;
+    grid-column: 1/10;
+    
+    background-color: rgba(243, 243, 243, 0.753);
+     
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
 footer{
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     grid-column: 1/13;
