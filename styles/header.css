@@ -1,6 +1,7 @@
 header{
     overflow: visible;
     width: 100%;
+    z-index: 4000;
 }
 
 *::before, *::after{
@@ -72,6 +73,8 @@ header nav{
     width: 100%;
     align-items: center;
     margin-top: -2rem;
+    z-index: 1000;
+    
 }
 
 .nav-list li{
@@ -92,11 +95,18 @@ header nav{
     padding: 0 1rem;
     font-size: 1.1rem;
     text-transform: uppercase;
-    transition: color 0.5s;
+    transition: all 0.5s;
 }
 
 .nav-list a:hover{
     color: yellow;
+    border: 2px solid white;
+    background-color: rgb(41, 44, 175);
+}
+
+.sub-menu a:hover{
+    border: none;
+    background-color: lightblue;
 }
 
 .btn{
@@ -106,6 +116,15 @@ header nav{
     border: 2px solid white;
     border-radius: 2rem;
     transition: background-color 0.5s;
+}
+
+.btn a{
+    color: black;
+}
+
+.btn:hover a{
+    background-color:lightblue;
+    border: none;
 }
 
 .btn:hover{
@@ -123,7 +142,7 @@ header nav{
     top: 5rem;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5 ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .sub-menu::before{
@@ -145,6 +164,11 @@ header nav{
     margin: auto 0 auto auto;
     line-height: inherit;
     margin-right: 2rem;
+    
+}
+
+.active{
+    background-color: rgb(113, 224, 99);
 }
 
 @media screen and (max-width: 800px){
@@ -161,6 +185,7 @@ header nav{
         flex-direction: column;
         background-color: lightblue;
         align-items: initial;
+        border-bottom: 3px solid rgb(41, 44, 175);
     }
 
     .nav-list > li{
@@ -172,8 +197,9 @@ header nav{
         position: initial;
         border: 3px solid transparent;
         border-left-color: black;
-        margin-left: 1rem;
+        margin-left: -1rem;
         max-height: 0;
+        width: 10vw;
     }
     
     .sub-menu::before{
@@ -186,12 +212,18 @@ header nav{
         max-height: initial;
     }
 
+    .nav-list a:hover{
+        color: yellow;
+        border: none;
+        background: rgb(41, 44, 175);
+    }
+
     #btn{
         max-height: 0 auto;
         line-height: initial;
         position: absolute;
-        right: 0.5rem;
-        top: 1rem;
+        right: 1rem;
+        top:-4.5rem;
     }
     
     .menu-icons{
@@ -216,5 +248,9 @@ header nav{
        left: -1rem;
     }
 
+    .btn:hover a{
+        color: black;
+        background-color: lightblue;
+    }
     
 }
