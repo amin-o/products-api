@@ -15,15 +15,16 @@ footer{
 .innerFooter{
     width: 95;
     margin: auto;
-    padding: 2rem 0.5rem;
+    padding: 0 0.5rem;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    font-weight: 600;
 }
 
 .footerItems{
-    width: 25%;
+    width: 30%;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
 }
@@ -62,7 +63,7 @@ h2{
 footer ul{
     list-style: none;
     color: rgb(41, 44, 175);
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left:-2rem;
    
 }
@@ -86,9 +87,9 @@ footer ul a:hover{
 .social{
     width: 100%;
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-top: -1.5rem;
 }
-
 .social a{
     text-decoration: none;
 }
@@ -124,6 +125,9 @@ footer ul a:hover{
     .innerFooter{
         flex-direction: column;
     }
+    .social {
+    text-align: center;
+}
     .footerItems{
         width: 100%;
     }
