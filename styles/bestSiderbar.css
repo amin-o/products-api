@@ -7,7 +7,7 @@
     }
 
 }
-/* pocinjem da editujem */
+ 
 @media (min-width: 900px) { 
 
     .best-sidebar-main{
@@ -15,10 +15,11 @@
         flex-direction: column;
         border-radius: 1rem;
 
+        /* removed temporarly until the slider is fixed */
         -webkit-box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
         -moz-box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
         box-shadow: inset 0px 0px 29px -1px rgba(235,235,235,1);
-
+ 
         align-content: center;
     }
 

@@ -14,7 +14,7 @@ function fetchBestSiderbarData(){
 
         try{
             //fetch 3 movies that are highly rated and on sale
-            let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true&customerReviewAverage>=4&type=movie)?format=json&pageSize=3&show=name,longDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc`)
+            let response = await fetch(`https://api.bestbuy.com/v1/products(onSale=true&inStoreAvailability=true&customerReviewAverage>=4&type=movie)?format=json&pageSize=3&show=name,shortDescription,image,regularPrice,salePrice,subclass,releaseDate,type,customerReviewAverage&sort=salePrice&apiKey=${api}&sort=salePrice.asc`)
             let data = await response.json();
         
             let products = data['products'];
@@ -23,7 +23,7 @@ function fetchBestSiderbarData(){
               
                 populateBestSidebar(parseInt(x)+1,products[x]['name'], products[x]['image'], products[x]['salePrice'],
                                     products[x]['regularPrice'], products[x]['releaseDate'], products[x]['subclass'], 
-                                    products[x]['longDescription'], products[x]['customerReviewAverage']);
+                                    products[x]['shortDescription'], products[x]['customerReviewAverage']);
 
             }
 

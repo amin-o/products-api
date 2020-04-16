@@ -1,7 +1,7 @@
 footer{
-    width: 100%;
-    display: block;
-    background-image: linear-gradient(to bottom,#041024, #1c67e6);
+   width: 100%;
+   display: block;
+    margin-top: 10rem;
 }
 
 .innerFooter{
@@ -23,7 +23,7 @@ footer{
 h1{
     padding: 0.5rem 0;
     font-size: 1.1rem;
-    color: white;
+    color: rgb(41, 44, 175);
     text-transform: uppercase;
     text-align: center;
 }
@@ -37,37 +37,40 @@ h1{
 }
 
 h2{
-    color: grey;
+    color: rgb(59, 59, 59);
     font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
+     
 }
 
 .border{
     height: 0.1rem;
     width: auto;
-    background: #ff9800;
+    background-color: rgb(41, 44, 175);
+    
 }
 
 ul{
     list-style: none;
-    color: #fff;
+    color: rgb(41, 44, 175);
     font-size: 0.8rem;
     margin-left:-2rem;
+   
 }
 
 ul a{
     text-decoration: none;
     outline: none;
-    color: #fff;
-    transition: all 1s;
+    color: rgb(41, 44, 175);;
+     
     display: inline-block;
     margin: 0.5rem 0.5rem;
 }
 
 ul a:hover{
-    color: black;
-    transform: translateY(0.5rem);
+    color: rgb(255, 136, 0);
+ 
 }
 
 .social{
@@ -85,37 +88,63 @@ ul a:hover{
     width: 1rem;
     margin: 1rem 0.3rem;
     padding: 0.5rem;
-    color: white;
+    color: rgb(41, 44, 175);
     border-radius: 50%;
-    border: 1px solid blue;
+    border: 1px solid rgb(230, 230, 230);
     overflow: visible;
     transition: 0.7s;
 }
 
 .social i:hover{
-    background: lightblue;
-    border: 2px solid blue;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 17, 255);
 }
 
 .footer-bottom{
-    padding: 0.5rem;
-    background: #3d545f;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+    background: rgb(22, 24, 170);
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    
 }
 
 @media screen and (max-width: 1000px){
     
-    .footerItems{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px){
     .innerFooter{
         flex-direction: column;
     }
     .footerItems{
         width: 100%;
     }
+    ul{
+        list-style: none;
+        color: rgb(41, 44, 175);
+        font-size: 0.8rem;
+        margin-left:-2rem;
+        text-align: center;
+    }
+
+    .footerItems p{
+    
+    text-align: center;
+    
+    }
+
+    .footerItems{
+   
+        padding: 0rem;
+  
+    }
+    h1{
+        padding: 0rem;
+       
+    }
+    .border{
+        height: 0.1rem;
+        width: 90%;
+        margin: auto;
+        background-color: rgb(41, 44, 175);
+    
+    }   
 }

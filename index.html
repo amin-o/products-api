@@ -9,6 +9,7 @@
     <title>Products API Main Page</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="styles/topRated.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/facebookSidebar.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -27,7 +28,7 @@
     <script src="scripts/slider.js" defer></script>
     <script src='scripts/bestSidebar.js' defer></script>
     <script src="scripts/facebookSidebar.js" defer></script>
-     
+    <script src="scripts/topRated.js" defer></script>
 </head>
  
     <body>
@@ -66,11 +67,8 @@
 
             <!-- slider sectin-->
             <div id="slider">
-			
         	    <i class="fas fa-chevron-left sliderNavigationBtn sliderPreviousBtn"></i>
-
                 <i class="fas fa-chevron-right sliderNavigationBtn sliderNextBtn"></i>
-            
             </div>   
 
             <!-- best sidebar -->
@@ -102,19 +100,21 @@
                     <button class="best-sidebar-buy-button" id="bestSiderbarDetails">Details</button>
                 
                 </div>
-
             </div>
 
             <!-- facebook sidebar -->
             <div id="facebookSidebar">
-
                 <iframe id="fb" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
             </div>
 
             <!-- top rated -->
             <div id="topRated">
-                TOP RATED SECTION
+                <h2  class="headingTopRated">[ Top Rated Items on sale ] </h2>
+
+                <div class="gridTopRated"> 
+                    
+                </div>
+                <button class="loadMore">Load More</button>
             </div>
         
             <!-- modal window -->
@@ -134,9 +134,10 @@
                             <div class="modal-slider-product-release-date"></div>
                             <div class="modal-slider-product-description"></div>             
                             <div class="modal-slider-product-rating"></div>
+                            <div class="modal-slider-product-category"></div>
                             <div class="modal-slider-product-price-regular"></div>
                             <div class="modal-slider-product-price-sale"></div>
-                            <div class="modal-slider-product-category"></div>
+                             
  
                             <button class="add-to-cart-modal">Add to cart</button>
 
@@ -155,9 +156,9 @@
         <footer>
             <div class="innerFooter">
                 <div class="footerItems">
-                    <h1>Random c. name</h1>
+                    <h1>Products API</h1>
                     <p>
-                        Lorem ipsum dolor, sit conse ctetur adipi sicing elit. Ita que mole stiae facilis.
+                        Web application with product manipulation. Technologies used: HTML, CSS, JavaScript
                     </p>
                 </div>
 
@@ -165,11 +166,11 @@
                     <h2>Links</h2>
                     <div class="border"></div>
                     <ul>
-                        <a href=""><li>Home</li></a>
-                        <a href=""><li>List</li></a>
-                        <a href=""><li>Help</li></a>
-                        <a href=""><li>About us</li></a>
-                        <a href=""><li>Contact</li></a>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="pages/listPage.html"><li>List</li></a>
+                        <a href="pages/help.html"><li>Help</li></a>
+                        <a href="pages/aboutUs.html"><li>About us</li></a>
+                        <a href="#"><li>Contact</li></a>
                     </ul>
                 </div>
 
@@ -194,7 +195,7 @@
 
             </div>
             <div class="footer-bottom">
-                Copyright &copy; Random Company name 2020. All rights reserved.
+                Copyright &copy; Products API 2020. All rights reserved.
             </div>
         </footer>
 

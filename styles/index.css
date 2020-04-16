@@ -1,45 +1,45 @@
 #indexWrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    grid-column-gap: 1rem;
     margin-left: 5rem;
     margin-right: 5rem;
+    grid-row-gap: 3rem;
 }
 
 header{
+
     grid-row: 1;
     grid-column: 1/13;
     width: 100%;
     height: 5rem;
     background-color: rgb(70, 50, 255);
     margin-bottom: 3rem;
+
 }
 
+ 
 #bestSidebar{
-    grid-row: 2/6;
+    grid-row-start: 3;
     grid-column: 10/13;  
 }
 
 #facebookSidebar{
-    grid-row: 6/11;
+   
     grid-column: 10/13;
-    
-    width: 100%;
+    grid-row-start: 4;
+     
     background-color: white;;
 }
 
-#topRated{
-    grid-row: 5/11;
-    grid-column: 1/10;
-    width: 100%;
-    background-color: palegreen;
-}
+
 
 footer{
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     grid-column: 1/13;
-    background-color: rgb(9, 0, 134);
+    background-color: rgb(255, 255, 255);
+    border-top: solid rgb(160, 160, 160) 1px;
 
 }
