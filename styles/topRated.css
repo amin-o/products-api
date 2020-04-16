@@ -1,4 +1,17 @@
 
+#topRated{
+
+	grid-row: 3/6;
+    grid-column: 1/10;
+    
+    background-color: rgba(243, 243, 243, 0.438);
+     
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+
 .gridTopRated{
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -67,4 +80,27 @@
  
     cursor: pointer;
     transition-duration: 0.5s;
+}
+
+@media (max-width: 900px) {
+    #topRated{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row: 3/6;
+        grid-column: 1/13;
+        
+        background-color: rgba(243, 243, 243, 0.438);
+        
+        border-radius: 1rem;
+        text-align: center;
+        
+    }
+
+    .gridTopRated{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin: 0 1rem;
+    }
+    
 }

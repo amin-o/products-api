@@ -32,17 +32,7 @@ header{
     background-color: white;;
 }
 
-#topRated{
 
-	grid-row: 3/6;
-    grid-column: 1/10;
-    
-    background-color: rgba(243, 243, 243, 0.438);
-     
-    border-radius: 1rem;
-    text-align: center;
-    
-}
 
 footer{
     margin-top: 1rem;
