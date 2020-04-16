@@ -18,10 +18,10 @@ slider.addEventListener('mouseenter', function(){
 })
 slider.addEventListener('mouseleave', function(){
 mouseOverSlider = false;
-autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
+//autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
 })
 
-let autoSlider = setInterval(sliderLoadAuto, 4300); //svakih 4 sekunde pozovi funkciju za ucitavanje novih itema slidera
+//let autoSlider = setInterval(sliderLoadAuto, 4300); //svakih 4 sekunde pozovi funkciju za ucitavanje novih itema slidera
 
 function sliderLoadAuto(){
    sliderLoadNext();
