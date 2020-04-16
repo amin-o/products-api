@@ -21,7 +21,7 @@
 .headingTopRated{
 	text-align: center;
 	font-weight: 600;
-	color: rgb(0, 22, 150);
+	color: rgb(28, 55, 209);
 }
 .topRatedItem{
     border-radius: 1rem;
@@ -54,7 +54,7 @@
     margin: 0;
 }
 .titleTopRatedItem{
-	color: #19408f;
+	color: #255ac5;
 	font-weight: 700;
 }
 .priceTopRatedItem{

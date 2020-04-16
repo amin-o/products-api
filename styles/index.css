@@ -20,14 +20,14 @@ header{
 
  
 #bestSidebar{
-    grid-row-start: 3;
+    grid-row: 2/4;
     grid-column: 10/13;  
 }
 
 #facebookSidebar{
    
     grid-column: 10/13;
-    grid-row-start: 4;
+    grid-row: 4;
      
     background-color: white;;
 }
@@ -35,7 +35,7 @@ header{
 
 
 footer{
-    margin-top: 1rem;
+    margin-top: 10rem;
     width: 100%;
     height: auto;
     grid-column: 1/13;
