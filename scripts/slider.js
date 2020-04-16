@@ -17,8 +17,8 @@ slider.addEventListener('mouseenter', function(){
     clearInterval(autoSlider); //if we are in slider area, stop auto swiping slider
 })
 slider.addEventListener('mouseleave', function(){
-mouseOverSlider = false;
-autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
+    mouseOverSlider = false;
+    autoSlider = setInterval(sliderLoadAuto, 4300); //start autoSlider again when leave slider area
 })
 
 let autoSlider = setInterval(sliderLoadAuto, 4300); //svakih 4 sekunde pozovi funkciju za ucitavanje novih itema slidera
