@@ -1,4 +1,5 @@
 const apiKey = 'PrMnGciaOjAm4BpX0oxci8AB';
+
 let previousBtn = document.querySelector('.sliderPreviousBtn');
 let nextBtn = document.querySelector('.sliderNextBtn');
 let slider = document.querySelector('#slider');
